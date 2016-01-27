@@ -1,5 +1,20 @@
 #h_sex, #h_age, #h_rase, #h_name, #tl_1, #tl_2{
     padding: 0 5px 0 0;    
+ 
+}
+.sel_bg{
+    position: relative;
+    
+    &:before{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 4px;
+        bottom: -5px;
+        width: 1em;
+        background: rgba(255,255,255,.3);
+        background: linear-gradient(to left, rgba(255,255,255,.3), rgba(255,255,255,.01));
+    }
 }
 .m_head{
     font-weight: bold;
@@ -13,14 +28,3 @@ button img, .i-qw, .i-rf{
     height: 16px;
     vertical-align: bottom;
 }
-/*
-a{
-    color: @m-gray;
-    &:hover, &:active{
-        color: @l-gray;
-    }
-    &:visited{
-        color: @m-gray;
-    }
-}
-*/

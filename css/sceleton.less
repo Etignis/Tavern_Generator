@@ -13,7 +13,8 @@ body {
 	margin-right: 0px;
 	margin-bottom: 0px;	
 	background-color: @d-gray;
-	background: url('../img/t1.jpg') center center;
+	background: url('../img/t1.jpg') center center;	
+	background-attachment: fixed;
 	background-size: cover;
 	color: #555;
 	width: 100%;
@@ -29,6 +30,7 @@ img{
 	border: none;
 }
 
+@bt_wh: 2em;
 
 button, .bt{
     .fr-convex;
@@ -45,10 +47,35 @@ button, .bt{
         background:  @m-gray - #111;    
     }
 }
+input[type=checkbox]{
+    display: none;
+}
+input[type=checkbox]+ label{
+    .fr-convex;           
+    background: @m-gray + #111;
+    display: inline-block;
+    padding: .35em;
+    text-align: center;
+    &:hover{
+        background: @m-gray + #222;    
+    }
+    &:active{
+        background:  @m-gray;    
+    }
+    input{
+        display: none;
+    }
+}
+input[type=checkbox]:checked + label{
+    .fr-concave;
+    background:  @m-gray - #222;  
+    padding: .39em;  
+}
+
 .mod_win{
     .fr-concave;
     display: block;
-    position: fixed;
+    position: absolute;
     width: 20em;
     min-height: 15em;
     top: 1em;
@@ -72,22 +99,135 @@ button, .bt{
     background: rgba(0,0,0,.7);
 }
 
-
-table{
+.table{
+    float: none;
+    clear: both;
+    overflow: auto;
+    max-width: 70em;
+    //max-width: 750px;
+    min-width: 300px;
+         
+    @bt_wh: 2em;
     button{
         font-size: 85%;
+        width: @bt_wh;
+        height: @bt_wh;
+        text-shadow: 1px 1px 2px black;   
+    }
+    input[type=checkbox]+ label{
+        font-size: 85%;
+        width: @bt_wh;
+        height: @bt_wh;
+    }
+    
+    &:after, &:before{
+        .clear();
+    }
+    .line{      
+        .all(){
+            min-height: 1px;
+            padding-left: .2em;
+            padding-right: .2em;
+            /*padding-top: 2%;
+            padding-bottom: 2%;*/
+        }
+        float: left;
+        width: 100%;
+        background: rgba(0,0,0,0.6);
+        color: @l-gray;
+        font-size: 150%;
+        //padding: 4px 4px;
+       
+        text-shadow: 1px 1px 2px black;   
+        margin: 0 0 .2em;
+        .header{
+            .all();
+            float: left;
+            width: 20%;
+            
+            font-weight: bold; 
+            padding-top: 8px;
+            padding-bottom: 8px;
+    
+        }
+        .value{
+            .all();
+            float: left;   
+            width: 62%;
+            
+            padding-top: 8px;
+            padding-bottom: 8px;            
+        }
+        .bt_place{
+            .all();
+            float: right;   
+            width: 9%;
+            text-align: right;
+        }
     }
 }
-th, td{
-   background: rgba(0,0,0,0.5);
-   color: @l-gray;
-   width: 1px;
-   height: 1px;
-   font-size: 150%;
-   padding: 2px 4px;
-   
-   text-shadow: 1px 1px 2px black;
+
+select{
+    background: transparent;
+    color: @white;
+    text-shadow: 1px 1px 2px black; 
+    padding: .2em;
+    z-index: 4;
+    position: relative;
+    border: 1px solid rgba(255,255,255,.3);
+    
+    option{
+        background: rgba(0,0,0,.9); 
+        color: @white;
+        text-shadow: 1px 1px 2px black; 
+        padding: .2em;
+    }
 }
-th{
-    font-weight: bold;
+
+//////// media
+@media only screen and (min-width: 1500px) {	
+    body{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 600px) {	
+    .table{
+        .line{
+            .header{
+                width: 60%;    
+            }
+            .value{
+                width: 100%;    
+            }
+            .bt_place{
+                width: 20%;
+            }
+        }    
+    }   
+    #tavern{
+        float: none;
+        clear: both;
+        overflow: auto;
+        &:before, &:after{
+            .clear();
+        }
+        button, .bt{
+            min-height: 2em;
+            width: 48%;
+            float: left;
+        }
+    }
+}
+
+@media only screen and (max-width: 435px) {	
+    
+    #tavern{
+        button, .bt{
+            min-height: 1em;
+            display: block;
+            width: auto;
+            float: none;
+            font-size: 120%;
+        }
+    }
 }

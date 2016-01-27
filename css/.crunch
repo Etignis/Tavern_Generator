@@ -1,0 +1,28 @@
+{
+	"files": {
+		"tavern.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "tavern.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourcemap": true
+					}
+				}
+			],
+			"sources": [
+				"frame.less",
+				"grid.less",
+				"page.less",
+				"sceleton.less",
+				"usefull.less",
+				"vars.less"
+			]
+		}
+	}
+}
