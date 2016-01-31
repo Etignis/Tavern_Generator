@@ -45,6 +45,10 @@ var TROPICS = "Тропики";
 var FOREST = "Леса";
 var YUCK = "Трущобы";
 
+var SEX_M = "М";
+var SEX_F = "Ж";
+
+
 //var IMF_RF="<img src='img/i_rf.png' class='i_rf' style='width: 16px'>";
 //var IMF_RF="<span style='width: 16px; height: 16px; background: url(img/i_rf.png) center center no-repeat; background-size: cover; display: inline-block;'></span>";
 //var IMF_QW="<img src='img/i_qw.png' class='i_qw' style='width: 16px'>";
@@ -71,7 +75,10 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		var n1 = nl1.split(",");
 		
 		//n1 = shuffle(n1);
-		sn=randd(0,nl1.length-1);
+		var max = n1.length-1;
+		console.log("max: "+max);
+		sn=randd(0, max);
+		console.log("раса ранд: "+sn);
 		if(race!=0)
 			sn=race;
 		var option = "";
@@ -83,11 +90,11 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 				sel="selected=selected"
 			option+="<option value="+n1[i]+" "+sel+">"+n1[i]+"</option>"
 			}			
-		sel="<small>Раса:</small> <span class='sel_bg'><select id='host_race'>"+option+"</select></span>";
+		sel="<wbr><small>Раса:</small>&nbsp;<span class='sel_bg'><select id='host_race'>"+option+"</select></span>";
 		return sel;
 	}
 	function host_sex(){
-		var nl1="М,Ж";
+		var nl1=SEX_M+","+SEX_F;
 		
 		
 		var n1 = nl1.split(",");
@@ -136,9 +143,66 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		sel="<small>Возраст:</small> <span class='sel_bg'><select id='host_age'>"+option+"</select></span>";
 		return sel;
 	}
-	function host_name(race_x){
+	function host_name(race_x, rase_s){
 		var name="";
-		//console.log("r_x: "+race_x);
+		console.log("r_x: "+race_x);
+		if(race_x==RACE_1_m)
+			{
+			if(rase_s==SEX_M)
+				name=human_m(5);
+			else
+				name=human_f(5);
+			}
+		if(race_x==RACE_2_m)
+			{
+			if(rase_s==SEX_M)
+				name=elf_m(5);	
+			else
+				name=elf_f(5);	
+			}		
+		if(race_x==RACE_3_m)
+			{
+			if(rase_s==SEX_M)
+				name=dwarf_m(5);
+			else
+				name=dwarf_f(5);
+			}
+		if(race_x==RACE_4_m)
+			{
+			if(rase_s==SEX_M)
+				name=dragonborn_m(5);	
+			else
+				name=dragonborn_f(5);	
+			}
+		if(race_x==RACE_5_m)
+			{
+			if(rase_s==SEX_M)
+				name=tifling_m(5);
+			else
+				name=tifling_f(5);	
+			}
+		if(race_x==RACE_6_m)
+			{
+			if(rase_s==SEX_M)
+				name=halfling_m(5);	
+			else
+				name=halfling_f(5);	
+			}
+		if(race_x==RACE_7_m)
+			{
+			if(rase_s==SEX_M)
+				name=orc_m(5);	
+			else
+				name=orc_f(5);
+			}
+		if(race_x==RACE_8_m)
+			{
+			if(rase_s==SEX_M)
+				name=gnome_m(5);	
+			else
+				name=gnome_f(5);
+			}
+		/*
 		if(race_x==RACE_1_m)
 			{
 			name=human_m(5);	
@@ -202,7 +266,8 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		if(race_x==RACE_8_f)
 			{
 			name=gnome_f(5);	
-			}		
+			}	
+		*/			
 		//console.log("name: "+name);
 		rnd="<button id='rnd_host_name'>"+IMF_RF+"</button>";
 		return name;
