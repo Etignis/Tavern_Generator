@@ -1448,7 +1448,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		$("#h_race").append(host_race(sex));
 		var race_x=$("#host_race").val();
 		//console.log("race_x: "+race_x);
-		$("#h_name").append(host_name(race_x));
+		$("#h_name").append(host_name(race_x, sex));
 		$(".atmosphere").append(tavern_atm());
 		$("#tl_1").append(tavern_size());
 		$(".terrain_type").append(terrain_type());
@@ -1515,7 +1515,9 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	});
 	$("body").on("click", "#rnd_host_n", function(){
 		var race_x=$("#host_race").val();
-		$("#h_name").html(host_name(race_x));	
+		
+		var sex = $("#host_sex").val();
+		$("#h_name").html(host_name(race_x, sex));	
 	});
 	$("body").on("click", "#rnd_host", function(){
 		$("#h_sex").html(host_sex());
@@ -1564,16 +1566,28 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	$("body").on("change", "#host_race", function(){
 		var race_x=$("#host_race").val();
 		console.log("Возможно раса изменилась: "+race_x);
-		$("#h_name").html(host_name(race_x));
+		
+		var sex = $("#host_sex").val();
+		$("#h_name").html(host_name(race_x, sex));
 	});
 	$("body").on("change", "#host_sex", function(){
+		/*
 		var sex = $("#host_sex").val();
 		var age = $("#host_age").val();
-		var race = $("#host_race").val();
+		var race_x = $("#host_race").val();
+		
 		race = $("#host_race option[value="+race+"]").index();
 		console.log("select_race: "+race);
+		
 		$("#h_age").html(host_age(sex, age));
 		$("#h_race").html(host_race(sex, race));
+		$("#h_name").html(host_name(race_x, sex));	
+		*/		
+		var race_x=$("#host_race").val();
+		console.log("Возможно раса изменилась: "+race_x);
+		
+		var sex = $("#host_sex").val();
+		$("#h_name").html(host_name(race_x, sex));
 	});
 	
 	$("body").on("click", "#rnd", function(){
