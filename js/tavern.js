@@ -78,9 +78,9 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		
 		for(i=0; i< n1.length; i++)
 			{
-				sel="";
-				if(i==sn)
-					sel="selected=selected"
+			sel="";
+			if(i==sn)
+				sel="selected=selected"
 			option+="<option value="+n1[i]+" "+sel+">"+n1[i]+"</option>"
 			}			
 		sel="<small>Раса:</small> <span class='sel_bg'><select id='host_race'>"+option+"</select></span>";
@@ -246,7 +246,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		//console.log("n: "+n);
-		var nl1="Зул,Делатос,Камадос,Кверинакс,Менос,Хортос,Слутис,Эмокесс,Терат,Саракка,Динусин,Сиадисс,Москиз,Анмен,Талусс,Кутреш,Рулеф,Эделандросс,Малих,Ксанрос";
+		var nl1="Зул,Делатос,Камадос,Кверинакс,Менос,Хортос,Слутис,Эмокесс,Терат,Саракха,Динусин,Сиадисс,Москиз,Анмен,Талусс,Кутреш,Рулеф,Эделандросс,Малих,Ксанрос";
 		var nl2="Лафиан,Хлещехвост,Мрачнохмл,Желчебой,Цезбулан,Джеферлох,Дозмордин,Курелех,Темнопламень,Рельздехун,Грашт,Пуледиз,Армансусс,Черногонь,Вревиликус,Керевон,Офензул,Тетенбри,Чеммидон,Проклярость";
 		
 		var n1 = nl1.split(",");
@@ -264,7 +264,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 			n=1;
 		//console.log("n: "+n);
 		var nl1="Трейни,Дельзидиае,Зоа,Дересияй,Лиселис,Тизерия,Морианна,Теринна,Фобития,Тактра,Скрайя,Равертиа,Вашери,Пелуна,Думенсель,Валлистра,Ируведи,Гедонастрая,Ламита,Терсели";
-		var nl2="Лафиан,Хлещехвост,Мрачнохмл,Желчебой,Цезбулан,Джеферлох,Дозмордин,Курелех,Темнопламень,Рельздехун,Грашт,Пуледиз,Армансусс,Черногонь,Вревиликус,Керевон,Офензул,Тетенбри,Чеммидон,Проклярость";
+		var nl2="Лафиан,Хлещехвост,Мрачнохомл,Желчебой,Цезбулан,Джеферлох,Дозмордин,Курелех,Темнопламень,Рельздехун,Грашт,Пуледиз,Армансусс,Черногонь,Вревиликус,Керевон,Офензул,Тетенбри,Чеммидон,Проклярость";
 		
 		var n1 = nl1.split(",");
 		var n2 = nl2.split(",");
@@ -1142,7 +1142,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 			}
 		
 		if(f_one===undefined || f_one!=1)
-			sel="<br> <span class='sel_bg'><select id='tavern_level'>"+option+"</select";
+			sel="<br>Уровень обслуживания: <span class='sel_bg'><select id='tavern_level'>"+option+"</select";
 		else
 			sel=+n1[0];
 		return sel;
@@ -1609,8 +1609,8 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		"Добавлены опции для хозяина<ик>"+
 		"Добавлены опции выступающих в таверне</p>"+
 		"<br>"+
-		"<p><a href='http://youknowwho.ru/dnd/file/Tavern.pdf'>Скачать PDF-источник генератора таверн.</a></p>"+
-		"<p><a href='https://github.com/Etignis/DnD_Tavern_Generator'>Страница проекта на GitHub.</a></p>";
+		"<p><a href='http://youknowwho.ru/dnd/file/Tavern.pdf' target='_blanc'>Скачать PDF-источник генератора таверн.</a></p>"+
+		"<p><a href='https://github.com/Etignis/Tavern_Generator' target='_blanc'>Страница проекта на GitHub.</a></p>";
 		
 		$(".mod_win").html(info);
 	});
