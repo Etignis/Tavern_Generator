@@ -1,4 +1,12 @@
 # Tavern_Generator
-It's usefull
 
-This is Master's instrument for creating random tavern for game.
+Рабочая версия: http://tentaculus.ru/tavern/
+
+Генератор создает: 
+  * Название таверн
+  * Расу/Имя/Привычки и прочие особенности тавернщика
+  * Блюда и расценки
+  * Атмосферу и случайные события
+  
+  и другое...
+  
