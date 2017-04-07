@@ -447,9 +447,8 @@ input[type=checkbox]:checked + label {
   text-align: right;
 }
 #infoText {
-  padding: .3rem .9rem;
-  background: rgba(0, 0, 0, 0.8);
-  font-size: 130%;
+  padding: .6rem;
+  background: rgba(0, 0, 0, 0.7);
   color: #ddd;
 }
 select {
@@ -513,42 +512,6 @@ select option {
     float: none;
     font-size: 120%;
   }
-}
-#h_sex,
-#h_age,
-#h_race,
-#h_name,
-#tl_1,
-#tl_2 {
-  padding: 0 5px 0 0;
-  white-space: nowrap;
-}
-.sel_bg {
-  position: relative;
-}
-.sel_bg:before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 4px;
-  bottom: -5px;
-  width: 1em;
-  background: rgba(255, 255, 255, 0.3);
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.01));
-}
-.m_head {
-  font-weight: bold;
-}
-small {
-  color: #cccccc;
-  font-size: 70%;
-}
-button img,
-.i-qw,
-.i-rf {
-  width: 16px;
-  height: 16px;
-  vertical-align: bottom;
 }
 
 /*# sourceMappingURL=tavern.css.map */
