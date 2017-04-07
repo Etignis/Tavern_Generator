@@ -99,6 +99,12 @@ input[type=checkbox]:checked + label{
     background: rgba(0,0,0,.7);
 }
 
+#mainContainer{    
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
 .table{
     float: none;
     clear: both;
@@ -106,6 +112,7 @@ input[type=checkbox]:checked + label{
     max-width: 70em;
     //max-width: 750px;
     min-width: 300px;
+    
          
     @bt_wh: 2em;
     button{
@@ -140,6 +147,13 @@ input[type=checkbox]:checked + label{
        
         text-shadow: 1px 1px 2px black;   
         margin: 0 0 .2em;
+        
+        transition: background .3s;
+        
+        &:hover{
+            background: rgba(0,0,0,0.8);
+        }
+        
         .header{
             .all();
             float: left;
@@ -165,6 +179,15 @@ input[type=checkbox]:checked + label{
             text-align: right;
         }
     }
+}
+
+#infoText{
+    padding: .3rem .9rem;
+    background: rgba(0,0,0,.8);
+    font-size: 130%;
+    color: @l-gray;
+    
+    
 }
 
 select{

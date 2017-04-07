@@ -59,8 +59,14 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	
 	// создаем верхнюю панель
 	function make_generator(){		
-		generator="<a href='http://youknowwho.ru/dnd' class='bt'><i class='fa fa-home'></i></a><a class='bt' id='go'>Сгенерировать</a><a id='rnd' class='bt'>Перегенерировать</a><a class='bt' href='http://www.youknowwho.ru/message/?theme=dndtvgen' target='_blank'>Написать отзыв или предложение</a><a class='bt' href='http://youknowwho.ru/dnd/file/Tavern.pdf' target='_blank'>Скачать источник-PDF</a><a class='bt' id='info'>"+IMF_QW+"</a>";
+		generator="<a href='/' class='bt'><i class='fa fa-home'></i></a><a class='bt' id='go'>Сгенерировать</a><a id='rnd' class='bt'>Перегенерировать</a><a class='bt' href='/message/?theme=dndtvgen' target='_blank'>Написать отзыв или предложение</a><a class='bt' href='http://youknowwho.ru/dnd/file/Tavern.pdf' target='_blank'>Скачать источник-PDF</a><a class='bt' id='info'>"+IMF_QW+"</a>";
+		
+		$("#mainContainer").html("<div id='tavern'></div><div id='result'></div><div id='infoText'></div>");
 		$("#tavern").html(generator);
+		
+		var info_text = $("#info_text").html();
+		$("#info_text").remove();
+		$("#infoText").html(info_text);
 	}
 	
 	// список рас 
@@ -1824,7 +1830,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		"<p> Чекбоксы ["+IMF_SQ2+"] закрепляют значения полей. Поля, отмеченные чекбоксами, не будут обновляться при нажатии кнопки 'Перегенерировать'.</p>"+
 		"<br>"+
 		"<p>Версия 2.1 [28.01.2016]<br>"+
-		"Добавлены опции для хозяина<ик>"+
+		"Добавлены опции для хозяина<br>"+
 		"Добавлены опции выступающих в таверне</p>"+
 		"<br>"+
 		"<p><a href='http://youknowwho.ru/dnd/file/Tavern.pdf' target='_blanc'>Скачать PDF-источник генератора таверн.</a></p>"+

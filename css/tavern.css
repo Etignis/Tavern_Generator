@@ -57,7 +57,7 @@
   border-bottom-width: 2px;
   text-decoration: none;
   border-color: #555555;
-  color: #ffffff;
+  color: #fff;
   background: #666666;
   box-shadow: 0 1px 0px 0px rgba(255, 255, 255, 0.2) inset;
   cursor: pointer;
@@ -89,8 +89,8 @@
   border-style: solid;
   border-bottom-width: 2px;
   text-decoration: none;
-  border-color: #777777;
-  color: #ffffff;
+  border-color: #777;
+  color: #fff;
   background: #666666;
   box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.2) inset;
   cursor: pointer;
@@ -168,7 +168,7 @@ body {
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  background-color: #222222;
+  background-color: #222;
   background: url('../img/t1.jpg') center center;
   background-attachment: fixed;
   background-size: cover;
@@ -201,7 +201,7 @@ button,
   border-bottom-width: 2px;
   text-decoration: none;
   border-color: #555555;
-  color: #ffffff;
+  color: #fff;
   background: #666666;
   box-shadow: 0 1px 0px 0px rgba(255, 255, 255, 0.2) inset;
   -webkit-transition: all 0.3s ease;
@@ -215,7 +215,7 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: #777777;
+  background: #777;
   padding: .2em;
   display: inline-block;
   cursor: pointer;
@@ -250,7 +250,7 @@ input[type=checkbox] + label {
   border-bottom-width: 2px;
   text-decoration: none;
   border-color: #555555;
-  color: #ffffff;
+  color: #fff;
   background: #666666;
   box-shadow: 0 1px 0px 0px rgba(255, 255, 255, 0.2) inset;
   cursor: pointer;
@@ -274,7 +274,7 @@ input[type=checkbox] + label:hover {
   background: #999999;
 }
 input[type=checkbox] + label:active {
-  background: #777777;
+  background: #777;
 }
 input[type=checkbox] + label input {
   display: none;
@@ -295,8 +295,8 @@ input[type=checkbox]:checked + label {
   border-style: solid;
   border-bottom-width: 2px;
   text-decoration: none;
-  border-color: #777777;
-  color: #ffffff;
+  border-color: #777;
+  color: #fff;
   background: #666666;
   box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.2) inset;
   cursor: pointer;
@@ -319,7 +319,6 @@ input[type=checkbox]:checked + label {
   -moz-border-radius: 3px 3px 3px 3px;
   border-radius: 3px 3px 3px 3px;
   overflow: visible;
-  background: #fff;
   border: 0px solid #d8d8d8;
   border-top-width: 0px;
   /*display: inline-block;*/
@@ -330,8 +329,8 @@ input[type=checkbox]:checked + label {
   border-style: solid;
   border-bottom-width: 2px;
   text-decoration: none;
-  border-color: #777777;
-  color: #ffffff;
+  border-color: #777;
+  color: #fff;
   background: #666666;
   box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.2) inset;
   cursor: pointer;
@@ -352,8 +351,8 @@ input[type=checkbox]:checked + label {
   min-height: 15em;
   top: 1em;
   z-index: 999;
-  background: #ffffff;
-  color: #222222;
+  background: #fff;
+  color: #222;
   cursor: default;
   font-weight: normal;
 }
@@ -368,6 +367,10 @@ input[type=checkbox]:checked + label {
   margin: 0;
   z-index: 88;
   background: rgba(0, 0, 0, 0.7);
+}
+#mainContainer {
+  margin: 0 auto;
+  max-width: 800px;
 }
 .table {
   float: none;
@@ -401,10 +404,14 @@ input[type=checkbox]:checked + label {
   float: left;
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
-  color: #dddddd;
+  color: #ddd;
   font-size: 150%;
   text-shadow: 1px 1px 2px black;
   margin: 0 0 .2em;
+  transition: background .3s;
+}
+.table .line:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
 .table .line .header {
   min-height: 1px;
@@ -439,9 +446,15 @@ input[type=checkbox]:checked + label {
   width: 9%;
   text-align: right;
 }
+#infoText {
+  padding: .3rem .9rem;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 130%;
+  color: #ddd;
+}
 select {
   background: transparent;
-  color: #ffffff;
+  color: #fff;
   text-shadow: 1px 1px 2px black;
   padding: .2em;
   z-index: 4;
@@ -450,7 +463,7 @@ select {
 }
 select option {
   background: rgba(0, 0, 0, 0.9);
-  color: #ffffff;
+  color: #fff;
   text-shadow: 1px 1px 2px black;
   padding: .2em;
 }

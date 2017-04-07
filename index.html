@@ -4,13 +4,17 @@
   <title>Таверна</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!-- for monile -->
-  <meta name="description" content="Краткое описание страницы"> 
-  <meta name="Keywords" content="ключевые слова, через запятую"> 
-  <link href="fonts/FortAwesome/css/font-awesome.min.css" rel="stylesheet">
+  <meta name="description" content="Поможет получить ворох самых разных деталей о таверне, куда зашла патька"> 
+  <meta name="Keywords" content="таверна, генератор, dnd, d&d, rpg, tavern"> 
+  <link href="../_fonts/FortAwesome/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/tavern.css"><!-- include css styles  -->
   <link rel="shortcut icon" href="favicon.ico" /><!-- include icon for browser -->
   <script type='text/javascript' src='js/jquery-1.11.3.min.js'></script><!-- jQuery -->
   <script type='text/javascript' src='js/tavern.js'></script><!-- your script -->
+  
+  <meta property="og:image" content="img/og.jpg" />
+  <meta property="og:title" content="Генератор таверн" />
+  <meta property="og:description" content="Поможет получить ворох самых разных деталей о таверне, куда зашла патька" />
   
   <!-- IE must understand HTML5: -->
   <!--[if IE]>
@@ -25,10 +29,56 @@
   </style>
 </head>
 
-<body>
-	<div id='tavern'>
+<body>	
+	<div id="mainContainer">
 	</div>
-	<div id='result'>
+	<div id="info_text" class='center max_width_800'>
+		<p>
+			Генератор Таверн позволяет создать уникальную таверну и предоставляет множество деталей о таверне. От привычек хозяина и главного блюда до настроения посетителей и случайных событий. 
+		</p>
+		<p>
+			Чтобы сгенерировать таверну необходимо нажать кнопку [Сгенерировать] в верху страницы.
+		</p>
+		<p>
+			 Кнопка [Перегенерировать]  обновляет значения полей, у которых не отмечен чекбокс. Отмеченные чекбоксами считаются закрепленными.
+		</p>
+		<p>
+			Напротив кажой строки в таблице с данными о таверне есть две кнопки. Первая - [<i class="fa  fa-refresh" title="Обновить"></i>] - обновляет только это поле, вторая - [<i class="fa fa-check-square-o" title="Закреплен"></i>] - "закрепляет" поле и при нажатии кнопки [Перегенерировать] в верху странцы это значение не изменится.
+		</p>
+		<p>
+			Если есть предложени/пожелания по улучшению - <a style='color: #0288D1' href='https://tentaculus.ru/message?theme=dndnames'>пишите</a>.
+		</p>
 	</div>
+
+	 <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter42911239 = new Ya.Metrika({
+                    id:42911239,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/42911239" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </body>
 </html>
