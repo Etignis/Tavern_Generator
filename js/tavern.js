@@ -61,7 +61,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	function make_generator(){	
 		var info_text = $("#info_text").html();
 		$("#info_text").remove();	
-		generator="<a href='/' class='bt'><i class='fa fa-home'></i></a><a class='bt' id='go'>Сгенерировать</a><a id='rnd' class='bt'>Перегенерировать</a><a class='bt' href='/message/?theme=dndtvgen' target='_blank'>Написать отзыв или предложение</a><a class='bt' href='http://youknowwho.ru/dnd/file/Tavern.pdf' target='_blank'>Скачать источник-PDF</a><a class='bt' id='info'>"+IMF_QW+"</a>";
+		generator="<a href='/' class='bt'><i class='fa fa-home'></i></a><a class='bt' id='go'>Сгенерировать</a><a id='rnd' class='bt'>Перегенерировать</a><a class='bt' href='/message/?theme=dndtvgen' target='_blank'>Написать отзыв или предложение</a><a class='bt' href='https://tentaculus.ru/_files/Tavern.pdf' target='_blank'>Скачать источник-PDF</a><a class='bt' id='info'>"+IMF_QW+"</a>";
 		
 		$("#mainContainer").html("<div id='tavern'></div><div id='result'></div><div id='infoText'></div>");
 		
