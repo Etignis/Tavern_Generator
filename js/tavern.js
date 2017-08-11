@@ -1,3 +1,19 @@
+var TENTACULUS_APP_VERSION = "2.0.0";
+var oConfig = {}; // global app config data
+function setConfig(prop, val) {
+	if(prop && val != undefined && oConfig) {
+		oConfig[prop] = val;
+		localStorage.setItem("tavernConfig", JSON.stringify(oConfig));
+	}
+}
+function getConfig(prop) {
+	oConfig = JSON.parse(localStorage.getItem("tavernConfig")) || {};
+	if(prop!=undefined) {
+		return localStorage.getItem("tavernConfig")? oConfig[prop] : null;
+	}
+	return oConfig;
+}
+
 $(document).ready(function(){
 	// перемешивание
 	function shuffle(o){
@@ -63,7 +79,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		$("#info_text").remove();	
 		generator="<a href='/' class='bt'><i class='fa fa-home'></i></a><a class='bt' id='go'>Сгенерировать</a><a id='rnd' class='bt'>Перегенерировать</a><a class='bt' href='/message/?theme=dndtvgen' target='_blank'>Написать отзыв или предложение</a><a class='bt' href='https://tentaculus.ru/_files/Tavern.pdf' target='_blank'>Скачать источник-PDF</a><a class='bt' id='info'>"+IMF_QW+"</a>";
 		
-		$("#mainContainer").html("<div id='tavern'></div><div id='result'></div><div id='infoText'></div>");
+		$("#mainContainer").html("<div id='tavern' class='noprint'></div><div id='result'></div><div id='infoText'></div>");
 		
 		$("#tavern").html(generator);
 		$("#infoText").html(info_text);

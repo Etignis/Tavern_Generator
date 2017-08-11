@@ -24,6 +24,9 @@
   background: rgba(0, 0, 0, 0.6);
   display: none;
 }
+.noPrintBreak {
+  page-break-inside: avoid;
+}
 .frame {
   -webkit-border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
@@ -153,6 +156,42 @@
 .row .col12 {
   float: left;
   width: 100%;
+}
+#topMessage {
+  padding: .2em;
+  padding-bottom: .3em;
+  background: #487EC5;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+#topMessage a {
+  color: #fff;
+  text-decoration: none;
+}
+#topMessage .dDetails {
+  display: none;
+}
+#topMessage .bHide {
+  align-self: flex-end;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  padding: .1em .3em;
+  margin: .1em .1em 0em;
+  background: transparent;
+  text-decoration: none;
+  color: #fff;
+  transition: background .3s, color .3s;
+  font-weight: 600;
+}
+#topMessage .bHide:hover {
+  background: #fefefe;
+  color: #376db4;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 * {
   box-sizing: border-box;
@@ -401,6 +440,7 @@ input[type=checkbox]:checked + label {
   padding: 0!important;
 }
 .table .line {
+  page-break-inside: avoid;
   float: left;
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
@@ -512,6 +552,72 @@ select option {
     float: none;
     font-size: 120%;
   }
+}
+@media print {
+  .noprint {
+    display: none !important;
+  }
+  #wrap {
+    overflow-x: hidden;
+  }
+  body {
+    background: #fff;
+    background-image: none;
+    margin: 0;
+    padding: 0;
+  }
+  .p_cont {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+    overflow: hidden;
+    transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+  }
+  #wrap {
+    margin: 0;
+    padding: 0;
+  }
+  .pagebreak {
+    page-break-after: always;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+  .table .line {
+    background: none;
+    color: #333;
+    text-shadow: none;
+  }
+  .table .line:hover {
+    background: none;
+  }
+  .table .bt_place {
+    display: none;
+  }
+  #infoText {
+    display: none;
+  }
+  select {
+    color: #333;
+    text-shadow: none;
+    font-size: 100%;
+    font-weight: normal;
+    display: inline-block;
+    padding: 0;
+    marign: 0;
+    margin-right: .3em;
+  }
+  select option {
+    width: 0;
+  }
+}
+@page {
+  margin: 1.14cm .9cm .9cm;
 }
 
 /*# sourceMappingURL=tavern.css.map */
