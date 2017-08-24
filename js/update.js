@@ -1,10 +1,10 @@
 var oInfo = {
   title: "Новая версия",
   url: "www.tentaculus.ru/tavern",
-  resume: "Можно сохраянть таверну (печать в PDF)",
+  resume: "Добавлена ссылка на генератор имен",
   details: "",
-  date: "29.05.2017",
-  version: "2.0.0"
+  date: "23.08.2017",
+  version: "2.0.2"
 }
 
 function showMessage(oParams) {	
