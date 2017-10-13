@@ -79,9 +79,9 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		$("#info_text").remove();	
 		generator="<a href='/' class='bt'><i class='fa fa-home'></i></a><a class='bt' id='go'>Сгенерировать</a><a id='rnd' class='bt'>Перегенерировать</a><a class='bt' href='/message/?theme=dndtvgen' target='_blank'>Написать отзыв или предложение</a><a class='bt' href='https://tentaculus.ru/_files/Tavern.pdf' target='_blank'>Скачать источник-PDF</a><a class='bt' id='info'>"+IMF_QW+"</a>";
 		
-		$("#mainContainer").html("<div id='tavern' class='noprint'></div><div id='result'></div><div id='infoText'></div>");
+		$("#mainContainer").html("<div id='menu' class='noprint'></div><div id='result'></div><div id='infoText'></div>");
 		
-		$("#tavern").html(generator);
+		$("#menu").html(generator);
 		$("#infoText").html(info_text);
 		
 		
@@ -1322,19 +1322,21 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	// разговоры в таверне
 	function tavern_theme(){
 		// шаблон - "Тема1; Тема2;..."
+    var url="https://tentaculus.ru/random/#item=rumors";
+    var link =  "<br><a href='"+url+"' style='float: right; color: rgba(181,218,251, 0.34); padding-right: .4em' target='_blanc'><small>Больше слухов <i style='position: relative; top: .1em' class='fa fa-external-link' aria-hidden='true'></i></small></a>";
 		var ln='Два посетителя тихо обсуждают сделку по продаже местных товаров.; Местного жителя снова выгнала из дома жена. Сплетники обсуждают, что в этот раз могло её разозлить.; Стоит плохая погода. Народ надеется, что она улучшится до того, как из-за неё пострадает торговля.; Поддатые посетители жалуются на десятину и налоги.; Идёт оживлённая дискуссия о том, где лучше покупать домашний скот и каких цен стоит ожидать.; У жителей не хватает рабочих лошадей, так что урожай собирать будет очень неудобно.; Посетители спорят, чей эль вкуснее и где саме красивые служанки.; Хозяин рассказвает юному посетителю, как добиваться расположения девушек. Тот слушает очень внимательно.; Родители ругаются на то, что их дети мечтают когда-нибудь стать искателями приключений.; Торговля в последнее время идёт хорошо. Говорят, богатй торговец ищет в городе помещение, чтоб открть новое дело.; Пьяный посетитель еле слышно бубнит о том, что он потерял свою истинную любовь.; Кто-то расхваливает одежду другого, и тут же просит заплатить за него по счетам — «в последний раз».; Гремят кружки в честь давно умершего друга. Все делятся рассказами и воспоминаниями.; Пожар последней зимой был не случаен. Он возник из-за пьяного беспечного путника, перепутавшего заклинания.; Пришедшие в город менестрели очень красивые. Особенно тот, что в красном!; Старый посетитель осуждает манеры молодого спутника, которого не интересует мнение старика.; Посетитель жалуется на предстоящую тяжёлую работу. Ему не хочется две недели сопровождать работодателя в поездке.; Отпив ещё эля, одинокий посетитель зачитывает вслух написанное им любовное письмо, в котором он старался подобрать правильне слова. Окружающие хихикают над ним.; Посетители за одним столиком оплачивают за свой счёт еду и питьё всех присутствующих.; Посетитель шепчет служанке на ухо что-то про «прогулку под луной», а та хихикает.;"Одного из тех самых святых воинов недавно видели в местном баре, он искал утешения на дне бутылки. Поговаривают, что он был в ордене паладинов. А потом бог отвернулся от него. И теперь всё свободное время парень пьёт за барной стойкой.";"Не пей красный эль в таверне «Корнуэльская курица». Старая дамочка по имени Миллер как-то выпила и однажды ночью превратилась… в ласку. Да, в ласку! Нет, я не пьян и говорю серьёзно!";"Один худосочный парень прибыл в город два дня назад. Он зашёл в товарную лавку и скупил все съедобные припасы. Он говорит, что еда ему понадобится только если что-то пойдёт не так. Я ничего не хочу сказать, но выглядит это подозрительно.";"Эй, а вы знаете, что этот город построен на кладбище? Да, они сняли надгробья и начали строить прямо на могилах. Звучит жутко.";"Мы не хороним мертвецов. Говорят, что если тело не сжечь и не отправить прах в урну, то вскоре поднимется мертвяк. Что-то вроде зомби. Поэтому если рядом с вами кто-то умер, подумайте в первую очередь об источнике огня.";"Вы наверняка слышали о нашем колодце. Да, тот самый, который высох уже как пару лет. Из-за него мы потеряли кучу наших ребятишек, кто-то говорит, из него вылезло огромное щупальце и схватило их. С тех пор никто и близко не подходит к чёртовому колодцу.";"Не давайте денег этому полуорку Ургрону! Он прокурит их все. Он говорит, что ему нужны деньги на какую-то экзотическую трубку или что-то в этом духе. Проблема в том, что когда он накурится, то начинает ходить по городу голый. Отвратное зрелище, я тебе скажу.";"Держитесь подальше от северной дороги ночью. Поговаривают, что всадник без головы скачет по ней и ищет голову, чтобы заменить свою собственную! Так что держитесь за головы и не подходите к дороге.";"Я слышал о том, как группка маленьких девочек стучится людям в двери. И если кто-нибудь им открывает, то те читают хозяевам дома детский стишок. Очень странно, я не припомню, чтобы эти девочки жили в нашем городе.";"Полурослик по имени Эдгрин ищет деньги для своей экспедиции. Тысячу золотых монет. Говорит, что собирается охотиться на дракона. Правда, когда кто-то в последний раз давал ему денег на экспедицию, то этот кто-то остался без гроша.";"Дом Талли Мэй находится в северной части города. Да, она разводит кошек. Множество кошек. Её дом пахнет мочой, а половина кошек мертвы. Кое-кто однажды сказал, что видел, как мёртвые кошки гуляют во дворе.";"Мо получил удар молнией год назад. Настоящая трагедия! Теперь он говорит совсем нечленораздельно и о себе упоминает только в третьем лице. Он называет себя Мо Бог Молний. Его мать считает, что вернуть бедняге прежнее состояние можно только вновь с помощью удара молнии.";"Помните статую, которую вы увидели, когда вошли в город? А её глаза из драгоценных камней? Говорят, что они записывают каждое ваше передвижение по городу. Мол, мэр таким образом шпионит за своими людьми.";"Знаете что странно? Ни одна женщина не родила за последние пять лет. Мне кажется, что всё дело в воде.";"Рисунки на стенах повсюду. Последние несколько недель кто-то постоянно рисует на стенах домов этот ужасный череп козла. Мы пытались оттереть краску, но её очень трудно смыть.";"Неподалёку от города находится заброшенная шахта. Ходят слухи, что шахтёры откопали какой-то неизвестный проход и сгинули там. Мой хороший друг рассказал мне, что они нашли путь в гоблинский город.";"Мы ждём караван с поставками, который должен был прибыть ещё неделю назад. Интересно, что там случилось?";"Отец Забрин — странный парень. Он собирает самые разные святые символы. Мало того, он каждый год выбирает новое божество и начинает ему поклоняться. Шарлатан, говорю вам!";"Вы когда-нибудь слышали о барде по имени Маллак? Так вот, мне говорили, что он умер два года назад в результате несчастного случая. И затем из ниоткуда он вновь объявился в нашем городе буквально на днях. И знаете, он довольно хорошо выглядит для того. кто должен быть мёртв.";"Ровно в полночь каждая собака в этом городе начинает выть. У меня уже нервы ни к чёрту из-за этой какофонии. Я постоянно задаюсь вопросом «почему каждую ночь в одно и то же время?»."';
 		
 		
 		var n2 = ln.split(";");
 		
 		n2 = shuffle(n2);
-		return n2[0].trim(); ;		
+		return n2[0].trim()+link; 
 	}
 	
 	// случайное событие в таверне
 	function tavern_event(){
 		// шаблон - "Событие1; Событие2;..."
-		var ln="Кто-то роняет кружку, и раздаётся взрыв смеха.; Как только приоткрвается входная дверь, на улицу вбегает крыса.; Посетитель, пошатывающийся у барной стойки, падает, теряя горсть монет.; Кто-то громко рыгает, после чего тихо хихикает.; Со сторон кухни слышно, как что-то бьют и ломают.; От внезапного удара грома некоторые посетители подпргивают на месте.; За одним столом разгорелся спор. Собеседники оттолкнули свои стулья, и вот-вот начнётся драка.; Служанка случайно проливает на посетителя напиток, и теперь обильно извиняется.; Полено в очаге громко щёлкает, и на пол влетает несколько угольков. Служанка быстро их тушит.; Посетитель чересчур увлёкся служанкой, и получает быстрй и резкий отворот.; Посетители ищут хозяина и прислугу, которх нигде не видно.; В заведение входят несколько невероятно красивых женщин, которые садятся за стол и игнорируют всех вокруг.; Одно из настенных украшений, находящихся за барной стойкой, падает, и хозяин ловит его в прыжке на уровне пола.; По ту сторону окна садятся две птиц. Они видят еду на столах, и одна из них начинает клевать окно.; На серебряной кружке ненадолго проступает чьё-то лицо. Несколько посетителей вскрикивают от ужаса.; С потолка срывается капля жидкости цвета тёмной крови.; Посетитель машет хозяину и ловко кидает ему монетку. Хозяин монетку ловит.; На улице кто-то стоит, ожидая, что кто-то выйдет из таверн (или войдёт в неё). Он заметно волнуется.; Кому-то из посетителей плеснули в лицо напитком. Назревает заварушка.; На лютне барда лопается струна. Бард чудесным образом тут же подстраивается под новое звучание.; Кто-то выиграл в карточную игру. Раздаются громкие поздравления и несколько проклятий. Победитель с улыбкой сгребает кучу ставок.; Служанка наступает на хвост кота и раздаётся вопль. Кот убегает под стол и его не видно.; По ногам дует сквозняк, и всем становится зябко.; С громким возгласом два посетителя встают и начинают танцевать безо всякого ритма. Они явно пьяны.; По стеклу начинает бить дождь, но он тут же прекращается.; Один посетитель начинает громко смеяться, а его товарищ выглядит смущённым.; Когда входит новый посетитель, вместе с порвом ветра в заведение влетают небольшие предмет.; На один столик ставят поднос с грудой еды, посетитель с предвкушением потирает руки.; Кто-то скрипнул ножом по тарелке. Многие поёжились от неприятного звука.; Пьяница в углу окончательно отрубается, его голова со стуком впечатвается в наполовину полную тарелку с едой.; Уронив вилку, посетитель пытается её достать, и опрокидвает свой напиток.; Двое влюблённых кормят друг друга с ложечки и умилённо переглядваются.; Между хозяином и посетителем вспхивает короткая перепалка, и посетителю приказывают уйти.; Один посетитель встаёт с кружкой в руке и радостно сообщает всем, что следующий заказ можно сделать за его счёт.; Вы замечаете посетителя, тайком собирающего остатки еды с ничейных тарелок.; До вас доносится чудесный цветочный аромат от кого-то прошедшего мимо.; Хозяин случайно проливает на стойку эль и открвает рот, когда пиво принимает форму вопящего черепа. Он быстро смахивает его тряпкой и с тревогой смотрит на вас.; Посетитель вытворяет трюк с монеткой, после чего кидает её служанке, та с улыбкой ловит монету и подмигивает.; Масляная лампа тухнет. Немного погодя лампа опять вспыхивает.";
+		var ln="Кто-то роняет кружку, и раздаётся взрыв смеха.; Как только приоткрывается входная дверь, на улицу вбегает крыса.; Посетитель, пошатывающийся у барной стойки, падает, теряя горсть монет.; Кто-то громко рыгает, после чего тихо хихикает.; Со сторон кухни слышно, как что-то бьют и ломают.; От внезапного удара грома некоторые посетители подпрыгивают на месте.; За одним столом разгорелся спор. Собеседники оттолкнули свои стулья, и вот-вот начнётся драка.; Служанка случайно проливает на посетителя напиток, и теперь обильно извиняется.; Полено в очаге громко щёлкает, и на пол влетает несколько угольков. Служанка быстро их тушит.; Посетитель чересчур увлёкся служанкой, и получает быстрый и резкий отворот.; Посетители ищут хозяина и прислугу, котрых нигде не видно.; В заведение входят несколько невероятно красивых женщин, которые садятся за стол и игнорируют всех вокруг.; Одно из настенных украшений, находящихся за барной стойкой, падает, и хозяин ловит его в прыжке на уровне пола.; По ту сторону окна садятся две птиц. Они видят еду на столах, и одна из них начинает клевать окно.; На серебряной кружке ненадолго проступает чьё-то лицо. Несколько посетителей вскрикивают от ужаса.; С потолка срывается капля жидкости цвета тёмной крови.; Посетитель машет хозяину и ловко кидает ему монетку. Хозяин монетку ловит.; На улице кто-то стоит, ожидая, что кто-то выйдет из таверн (или войдёт в неё). Он заметно волнуется.; Кому-то из посетителей плеснули в лицо напитком. Назревает заварушка.; На лютне барда лопается струна. Бард чудесным образом тут же подстраивается под новое звучание.; Кто-то выиграл в карточную игру. Раздаются громкие поздравления и несколько проклятий. Победитель с улыбкой сгребает кучу ставок.; Служанка наступает на хвост кота и раздаётся вопль. Кот убегает под стол и его не видно.; По ногам дует сквозняк, и всем становится зябко.; С громким возгласом два посетителя встают и начинают танцевать безо всякого ритма. Они явно пьяны.; По стеклу начинает бить дождь, но он тут же прекращается.; Один посетитель начинает громко смеяться, а его товарищ выглядит смущённым.; Когда входит новый посетитель, вместе с порывом ветра в заведение влетают небольшие предмет.; На один столик ставят поднос с грудой еды, посетитель с предвкушением потирает руки.; Кто-то скрипнул ножом по тарелке. Многие поёжились от неприятного звука.; Пьяница в углу окончательно отрубается, его голова со стуком впечатывается в наполовину полную тарелку с едой.; Уронив вилку, посетитель пытается её достать, и опрокидывает свой напиток.; Двое влюблённых кормят друг друга с ложечки и умилённо переглядываются.; Между хозяином и посетителем вспыхивает короткая перепалка, и посетителю приказывают уйти.; Один посетитель встаёт с кружкой в руке и радостно сообщает всем, что следующий заказ можно сделать за его счёт.; Вы замечаете посетителя, тайком собирающего остатки еды с ничейных тарелок.; До вас доносится чудесный цветочный аромат от кого-то прошедшего мимо.; Хозяин случайно проливает на стойку эль и открывает рот, когда пиво принимает форму вопящего черепа. Он быстро смахивает его тряпкой и с тревогой смотрит на вас.; Посетитель вытворяет трюк с монеткой, после чего кидает её служанке, та с улыбкой ловит монету и подмигивает.; Масляная лампа тухнет. Немного погодя лампа опять вспыхивает.";
 		
 		
 		var n2 = ln.split(";");
@@ -1427,15 +1429,15 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		
 		n2 = shuffle(n2);
 		var how=n2[0].trim();
-		var rand=randd(0,4);
-		if(rand==0)
-		{
-			how+=", "+n2[1][0].trim().slice(0, 1).toLowerCase() + n2[1].trim().slice(1)+".";
-		}
-		if(rand==1)
-		{
-			how+=", но "+n2[1].trim().slice(0, 1).toLowerCase() + n2[1].trim().slice(1)+".";
-		}
+		// var rand=randd(0,4);
+		// if(rand==0)
+		// {
+			// how+=", "+n2[1][0].trim().slice(0, 1).toLowerCase() + n2[1].trim().slice(1)+".";
+		// }
+		// if(rand==1)
+		// {
+			// how+=", но "+n2[1].trim().slice(0, 1).toLowerCase() + n2[1].trim().slice(1)+".";
+		// }
 		
 		return how;	// "Так1" или "Так1, так2." или "Так1, но так2."	
 	}
@@ -1497,117 +1499,131 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		
 		var tbl="";
 		$("#result").text("");
-		tbl+="<div class='table'>"+
-				"<div class='line'>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_tavern_name'><label for='cb_tavern_name'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_tavern_name'>"+IMF_RF+"</button></div>"+
-					"<div class='header'><small>Название: </small></div>"+
-					"<div class='value tavern_name'></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Территория: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_terrain_type'><label for='cb_terrain_type'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_terrain_type'>"+IMF_RF+"</button></div>"+
-					"<div class='value terrain_type'></div>"+
-				"</div>"+
-				
-				"<div class='line'>"+
-					"<div class='header'><small>Хозяин: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_host'><label for='cb_host'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_host'>"+IMF_RF+"</button></div>"+
-					"<div class='value host'><span id='h_sex'></span><span id='h_age'></span><span id='h_race'></span></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Имя: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_host_n'><label for='cb_host_n'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_host_n'>"+IMF_RF+"</button></div>"+
-					"<div class='value host_n'><span id='h_name'></span></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Умеет: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_host_skill'><label for='cb_host_skill'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_host_skill'>"+IMF_RF+"</button></div>"+
-					"<div class='value host_skill'><span id='host_skill'></span></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Слабость: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_host_weakness'><label for='cb_host_weakness'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_host_weakness'>"+IMF_RF+"</button></div>"+
-					"<div class='value host_weakness'><span id='host_weakness'></span></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Не терпит: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_host_nopatience'><label for='cb_host_nopatience'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_host_nopatience'>"+IMF_RF+"</button></div>"+
-					"<div class='value host_nopatience'><span id='host_nopatience'></span></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Секрет: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_host_secret'><label for='cb_host_secret'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_host_secret'>"+IMF_RF+"</button></div>"+
-					"<div class='value host_secret'><span id='host_secret'></span></div>"+
-				"</div>"+
-				
-				"<div class='line'>"+
-					"<div class='header'><small>Параметры заведения: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_level'><label for='cb_level'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_level'>"+IMF_RF+"</button></div>"+
-					"<div class='value tavern_level'><span id='tl_1'></span><span id='tl_2'></span></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Расценки: </small></div>"+
-					"<div class='value price'></div><div></div><div></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Особое блюдо: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_dish1'><label for='cb_dish1'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_dish1'>"+IMF_RF+"</button></div>"+
-					"<div class='value meal'></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Особый напиток: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_dish2'><label for='cb_dish2'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_dish2'>"+IMF_RF+"</button></div>"+
-					"<div class='value drink'></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Общая атмосфера: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_atmosphere'><label for='cb_atmosphere'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_tavern_atmosphere'>"+IMF_RF+"</button></div>"+
-					"<div class='value atmosphere'></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Тема случайно услышанного разговора: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_theme'><label for='cb_theme'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_tavern_theme'>"+IMF_RF+"</button></div>"+
-					"<div class='value theme'></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Случайное событие: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_event'><label for='cb_event'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_tavern_event'>"+IMF_RF+"</button></div>"+
-					"<div class='value event'></div>"+
-				"</div>"+
-				"<div class='line'><div style='padding: .3em;'>В таверне идет представление</div></div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Как исполняют: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_mus_instr'><label for='cb_mus_instr'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_mus_instr'>"+IMF_RF+"</button></div>"+
-					"<div class='value mus_instr'></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Что: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_mus_about'><label for='cb_mus_about'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_mus_about'>"+IMF_RF+"</button></div>"+
-					"<div class='value mus_about'></div>"+
-				"</div>"+
-				"<div class='line'>"+
-					"<div class='header'><small>Настрой: </small></div>"+
-					"<div class='bt_place'><input type='checkbox' id='cb_mus_how'><label for='cb_mus_how'>"+IMF_SQ1+"</label></div>"+
-					"<div class='bt_place'><button id='rnd_mus_how'>"+IMF_RF+"</button></div>"+
-					"<div class='value mus_how'></div>"+
-				"</div>"+
-				"<div class='line'></div>";
+		tbl+="<div id='tavern'>"+
+        "<div class='table'>"+
+          "<div class='line'><div style='padding: .3em;'>Параметры заведения:</div></div>"+  
+          "<div class='line'>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_tavern_name'><label for='cb_tavern_name'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_tavern_name'>"+IMF_RF+"</button></div>"+
+            "<div class='header'><small>Название: </small></div>"+
+            "<div class='value tavern_name'></div>"+
+          "</div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Территория: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_terrain_type'><label for='cb_terrain_type'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_terrain_type'>"+IMF_RF+"</button></div>"+
+            "<div class='value terrain_type'></div>"+
+          "</div>"+	
+          "<div class='line'>"+
+            "<div class='header'><small>Параметры заведения: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_level'><label for='cb_level'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_level'>"+IMF_RF+"</button></div>"+
+            "<div class='value tavern_level'><span id='tl_1'></span><span id='tl_2'></span></div>"+
+          "</div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Расценки: </small></div>"+
+            "<div class='value price'></div><div></div><div></div>"+
+          "</div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Особое блюдо: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_dish1'><label for='cb_dish1'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_dish1'>"+IMF_RF+"</button></div>"+
+            "<div class='value meal'></div>"+
+          "</div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Особый напиток: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_dish2'><label for='cb_dish2'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_dish2'>"+IMF_RF+"</button></div>"+
+            "<div class='value drink'></div>"+
+          "</div>"+				
+        "</div>"+				
+        
+        "<div class='table'>"+	
+          "<div class='line'><div style='padding: .3em;'>Хозяин:</div></div>"+  
+          "<div class='line'>"+
+            "<div class='header'><small>Хозяин: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_host'><label for='cb_host'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_host'>"+IMF_RF+"</button></div>"+
+            "<div class='value host'><span id='h_sex'></span><span id='h_age'></span><span id='h_race'></span></div>"+
+          "</div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Имя: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_host_n'><label for='cb_host_n'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_host_n'>"+IMF_RF+"</button></div>"+
+            "<div class='value host_n'><span id='h_name'></span></div>"+
+          "</div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Умеет: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_host_skill'><label for='cb_host_skill'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_host_skill'>"+IMF_RF+"</button></div>"+
+            "<div class='value host_skill'><span id='host_skill'></span></div>"+
+          "</div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Слабость: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_host_weakness'><label for='cb_host_weakness'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_host_weakness'>"+IMF_RF+"</button></div>"+
+            "<div class='value host_weakness'><span id='host_weakness'></span></div>"+
+          "</div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Не терпит: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_host_nopatience'><label for='cb_host_nopatience'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_host_nopatience'>"+IMF_RF+"</button></div>"+
+            "<div class='value host_nopatience'><span id='host_nopatience'></span></div>"+
+          "</div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Секрет: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_host_secret'><label for='cb_host_secret'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_host_secret'>"+IMF_RF+"</button></div>"+
+            "<div class='value host_secret'><span id='host_secret'></span></div>"+
+          "</div>"+
+        "</div>"+
+          
+        "<div class='table'>"+		
+          "<div class='line'><div style='padding: .3em;'>Сейчас в таверне:</div></div>"+        
+          "<div class='line'>"+
+            "<div class='header'><small>Общая атмосфера: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_atmosphere'><label for='cb_atmosphere'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_tavern_atmosphere'>"+IMF_RF+"</button></div>"+
+            "<div class='value atmosphere'></div>"+
+          "</div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Тема случайно услышанного разговора: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_theme'><label for='cb_theme'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_tavern_theme'>"+IMF_RF+"</button></div>"+
+            "<div class='value theme'></div>"+
+          "</div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Случайное событие: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_event'><label for='cb_event'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_tavern_event'>"+IMF_RF+"</button></div>"+
+            "<div class='value event'></div>"+
+          "</div>"+
+          "<div class='line'><div style='padding: .3em;'>В таверне идет представление</div></div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Как исполняют: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_mus_instr'><label for='cb_mus_instr'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_mus_instr'>"+IMF_RF+"</button></div>"+
+            "<div class='value mus_instr'></div>"+
+          "</div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Что: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_mus_about'><label for='cb_mus_about'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_mus_about'>"+IMF_RF+"</button></div>"+
+            "<div class='value mus_about'></div>"+
+          "</div>"+
+          "<div class='line'>"+
+            "<div class='header'><small>Настрой: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_mus_how'><label for='cb_mus_how'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_mus_how'>"+IMF_RF+"</button></div>"+
+            "<div class='value mus_how'></div>"+
+          "</div>"+
+          "</div>"+
+          
+        "<div class='table'>"+		
+          "<div class='line'><div style='padding: .3em;'>После гулянки: (в работе)</div></div>"+        
+
+          "</div>"+
+          "</div>";
 		$("#result").append(tbl);
 		
 		//var type=$("#type").val();

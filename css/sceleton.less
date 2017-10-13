@@ -22,7 +22,7 @@ body {
 	
 	position: relative;
 	
-	font-size: 14px;
+	font-size: 12px;
 	font-family: sans-serif;
 	/*font-family: Comic Sans MS, Comic Sans MS5, cursive; /* you can delete this =) */
 }
@@ -101,18 +101,28 @@ input[type=checkbox]:checked + label{
 
 #mainContainer{
     margin: 0 auto;
-    max-width: 800px;
+    //max-width: 50rem;
 }
-
+#menu{
+	font-size: 115%;
+}
+#tavern{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
 .table{
     float: none;
     clear: both;
     overflow: auto;
-    max-width: 70em;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 40rem;
+    padding: .5rem;
     //max-width: 750px;
     min-width: 300px;
          
-    @bt_wh: 2em;
+    @bt_wh: 2rem;
     button{
         font-size: 85%;
         width: @bt_wh;
@@ -207,8 +217,40 @@ select{
     body{
         font-size: 16px;
     }
+    #mainContainer{
+    	//max-width: 100rem;
+    }
 }
 @media only screen and (max-width: 600px) {	
+    .table{
+        .line{
+            .header{
+                width: 80%;    
+            }
+            .value{
+                width: 100%;    
+            }
+            .bt_place{
+                width: 10%;
+            }
+        }    
+    }   
+    #tavern{
+        float: none;
+        clear: both;
+        overflow: auto;
+        &:before, &:after{
+            .clear();
+        }
+        button, .bt{
+            min-height: 2rem;
+            width: 2rem;
+            float: left;
+        }
+    }
+}
+
+@media only screen and (max-width: 435px) {	
     .table{
         .line{
             .header{
@@ -223,27 +265,10 @@ select{
         }    
     }   
     #tavern{
-        float: none;
-        clear: both;
-        overflow: auto;
-        &:before, &:after{
-            .clear();
-        }
         button, .bt{
-            min-height: 2em;
-            width: 48%;
-            float: left;
-        }
-    }
-}
-
-@media only screen and (max-width: 435px) {	
-    
-    #tavern{
-        button, .bt{
-            min-height: 1em;
+            min-height: 1rem;
             display: block;
-            width: auto;
+            width: 2rem;
             float: none;
             font-size: 120%;
         }

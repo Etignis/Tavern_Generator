@@ -215,7 +215,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   font-family: sans-serif;
   /*font-family: Comic Sans MS, Comic Sans MS5, cursive; /* you can delete this =) */
 }
@@ -409,25 +409,35 @@ input[type=checkbox]:checked + label {
 }
 #mainContainer {
   margin: 0 auto;
-  max-width: 800px;
+}
+#menu {
+  font-size: 115%;
+}
+#tavern {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .table {
   float: none;
   clear: both;
   overflow: auto;
-  max-width: 70em;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 40rem;
+  padding: .5rem;
   min-width: 300px;
 }
 .table button {
   font-size: 85%;
-  width: 2em;
-  height: 2em;
+  width: 2rem;
+  height: 2rem;
   text-shadow: 1px 1px 2px black;
 }
 .table input[type=checkbox] + label {
   font-size: 85%;
-  width: 2em;
-  height: 2em;
+  width: 2rem;
+  height: 2rem;
 }
 .table:after,
 .table:before {
@@ -513,13 +523,13 @@ select option {
 }
 @media only screen and (max-width: 600px) {
   .table .line .header {
-    width: 60%;
+    width: 80%;
   }
   .table .line .value {
     width: 100%;
   }
   .table .line .bt_place {
-    width: 20%;
+    width: 10%;
   }
   #tavern {
     float: none;
@@ -538,17 +548,26 @@ select option {
   }
   #tavern button,
   #tavern .bt {
-    min-height: 2em;
-    width: 48%;
+    min-height: 2rem;
+    width: 2rem;
     float: left;
   }
 }
 @media only screen and (max-width: 435px) {
+  .table .line .header {
+    width: 60%;
+  }
+  .table .line .value {
+    width: 100%;
+  }
+  .table .line .bt_place {
+    width: 20%;
+  }
   #tavern button,
   #tavern .bt {
-    min-height: 1em;
+    min-height: 1rem;
     display: block;
-    width: auto;
+    width: 2rem;
     float: none;
     font-size: 120%;
   }
