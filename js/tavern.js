@@ -69,8 +69,8 @@ var SEX_F = "Ж";
 
 // Кнопки
 var IMF_RF="<i class='fa  fa-refresh' title='Обновить'></i>";
-var IMF_SQ1='<i class="fa fa-square-o" title="Незакреплен"></i>';
-var IMF_SQ2='<i class="fa fa-check-square-o" title="Закреплен"></i>';
+var IMF_SQ1='<i class="fa fa-unlock-alt" title="Незакреплен"></i>';
+var IMF_SQ2='<i class="fa fa-lock" title="Закреплен"></i>';
 var IMF_QW="<i class='fa fa-question-circle'></i>";
 //////////////
 	
@@ -1871,6 +1871,12 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		if(!$("#cb_host_nopatience").prop("checked"))
 		{
 			$("#rnd_host_nopatience").click();
+		}
+		
+		
+		if(!$("#cb_whoopy").prop("checked"))
+		{
+			$("#rnd_whoopy").click();
 		}
 	});
 	
