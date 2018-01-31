@@ -201,6 +201,7 @@ html {
   margin: 0;
   padding: 0;
   color: #555;
+  font-size: 14px;
 }
 body {
   margin-left: 0px;
@@ -215,7 +216,6 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  font-size: 12px;
   font-family: sans-serif;
   /*font-family: Comic Sans MS, Comic Sans MS5, cursive; /* you can delete this =) */
 }
@@ -424,7 +424,7 @@ input[type=checkbox]:checked + label {
   overflow: auto;
   flex-grow: 1;
   flex-shrink: 1;
-  max-width: 40rem;
+  max-width: 44rem;
   padding: .5rem;
   min-width: 300px;
 }
@@ -470,7 +470,7 @@ input[type=checkbox]:checked + label {
   /*padding-top: 2%;
             padding-bottom: 2%;*/
   float: left;
-  width: 20%;
+  width: 24%;
   font-weight: bold;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -493,7 +493,7 @@ input[type=checkbox]:checked + label {
   /*padding-top: 2%;
             padding-bottom: 2%;*/
   float: right;
-  width: 9%;
+  width: 7%;
   text-align: right;
 }
 #infoText {
@@ -517,6 +517,7 @@ select option {
   padding: .2em;
 }
 @media only screen and (min-width: 1500px) {
+  html,
   body {
     font-size: 16px;
   }
@@ -569,7 +570,6 @@ select option {
     display: block;
     width: 2rem;
     float: none;
-    font-size: 120%;
   }
 }
 @media print {
@@ -638,5 +638,3 @@ select option {
 @page {
   margin: 1.14cm .9cm .9cm;
 }
-
-/*# sourceMappingURL=tavern.css.map */

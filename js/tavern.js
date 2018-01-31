@@ -13,19 +13,20 @@ function getConfig(prop) {
 	}
 	return oConfig;
 }
-
-$(document).ready(function(){
-	// перемешивание
-	function shuffle(o){
-    for(var j, x, k = o.length; k; j = Math.floor(Math.random() * k), x = o[--k], o[k] = o[j], o[j] = x);
-    return o;
-};
 function randd(min, max) {    
     //return 3;//
 	var rnd = Math.floor(arguments.length > 1 ? (max - min + 1) * Math.random() + min : (min + 1) * Math.random());
 	//console.log("rand num: "+rnd);
 	return rnd;
+};	
+function shuffle(o){
+    for(var j, x, k = o.length; k; j = Math.floor(Math.random() * k), x = o[--k], o[k] = o[j], o[j] = x);
+    return o;
 };
+$(document).ready(function(){
+	// перемешивание
+
+
 
 // Константы //
 // (Используются только мужские варианты)
@@ -1619,8 +1620,15 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
           "</div>"+
           "</div>"+
           
-        "<div class='table'>"+		
-          "<div class='line'><div style='padding: .3em;'>После гулянки: (в работе)</div></div>"+        
+        "<div class='table'>"+	
+		  "<div class='line'><div style='padding: .3em;'>После гулянки:</div></div>"+        		
+          "<div class='line'>"+
+			"<div class='header'>Результат: </div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_whoopy'><label for='cb_whoopy'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_whoopy'>"+IMF_RF+"</button></div>"+
+            "<div class='value whoopy'></div>"+
+		  "</div>"+  
+          "<div class='line' style='padding: .3em;'><small>Если у партии слишком много золота, можно его потратить, получив взамен опыт.<ul>				<li>По сути, гулянка это обмен золота на опыт (ХР) 1 к 1, пачками по 100 золотых.</li>				<li>Вся полученная таким образом экспа делится поровну между всеми членами команды.</li>				<li>Однако за каждые (количество персонажей в команде) х 100 золотых обмененные таким образом, один член команды должен гулять напропалую (и не без последствий). :)</li>				<li>Такой гуляка получает закономерный результат (кнопка \"Сгененрировать\" вверху слева). Сложные результаты разрешаются в начале следующей сессии.</li>			</ul></small></div>"+        
 
           "</div>"+
           "</div>";
@@ -1730,6 +1738,11 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	});
 	$("body").on("click", "#rnd_mus_how", function(){		
 		$(".mus_how").html(mus_how());
+	});
+	
+	
+	$("body").on("click", "#rnd_whoopy", function(){		
+		$(".value.whoopy").html(joy_result());
 	});
 	
 	$("body").on("click", "#rnd_host_skill", function(){		
