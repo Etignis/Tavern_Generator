@@ -1,0 +1,1043 @@
+Loaded plugins: fastestmirror
+Determining fastest mirrors
+ * base: mirror.corbina.net
+ * extras: mirror.corbina.net
+ * updates: mirror.corbina.net
+Package wget-1.14-15.el7_4.1.x86_64 already installed and latest version
+Nothing to do
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.corbina.net
+ * extras: mirror.corbina.net
+ * updates: mirror.corbina.net
+No package xmlrpc available.
+Resolving Dependencies
+--> Running transaction check
+---> Package curl.x86_64 0:7.29.0-42.el7_4.1 will be updated
+---> Package curl.x86_64 0:7.29.0-46.el7 will be an update
+--> Processing Dependency: libcurl = 7.29.0-46.el7 for package: curl-7.29.0-46.el7.x86_64
+---> Package freetype.x86_64 0:2.4.11-15.el7 will be installed
+---> Package giflib.x86_64 0:4.1.6-9.el7 will be installed
+--> Processing Dependency: libX11.so.6()(64bit) for package: giflib-4.1.6-9.el7.x86_64
+--> Processing Dependency: libSM.so.6()(64bit) for package: giflib-4.1.6-9.el7.x86_64
+--> Processing Dependency: libICE.so.6()(64bit) for package: giflib-4.1.6-9.el7.x86_64
+---> Package giflib-devel.x86_64 0:4.1.6-9.el7 will be installed
+---> Package giflib-utils.x86_64 0:4.1.6-9.el7 will be installed
+--> Processing Dependency: perl(getopts.pl) for package: giflib-utils-4.1.6-9.el7.x86_64
+---> Package libexif.x86_64 0:0.6.21-6.el7 will be installed
+---> Package libexif-devel.x86_64 0:0.6.21-6.el7 will be installed
+---> Package libexif-doc.x86_64 0:0.6.21-6.el7 will be installed
+---> Package libjpeg-turbo.x86_64 0:1.2.90-5.el7 will be installed
+---> Package libjpeg-turbo-devel.x86_64 0:1.2.90-5.el7 will be installed
+---> Package libjpeg-turbo-static.x86_64 0:1.2.90-5.el7 will be installed
+---> Package libjpeg-turbo-utils.x86_64 0:1.2.90-5.el7 will be installed
+---> Package libpng.x86_64 2:1.5.13-7.el7_2 will be installed
+---> Package libpng-devel.x86_64 2:1.5.13-7.el7_2 will be installed
+--> Processing Dependency: zlib-devel(x86-64) for package: 2:libpng-devel-1.5.13-7.el7_2.x86_64
+---> Package libpng-static.x86_64 2:1.5.13-7.el7_2 will be installed
+---> Package libpng12.x86_64 0:1.2.50-10.el7 will be installed
+---> Package libpng12-devel.x86_64 0:1.2.50-10.el7 will be installed
+--> Running transaction check
+---> Package libICE.x86_64 0:1.0.9-9.el7 will be installed
+---> Package libSM.x86_64 0:1.2.2-2.el7 will be installed
+---> Package libX11.x86_64 0:1.6.5-1.el7 will be installed
+--> Processing Dependency: libX11-common >= 1.6.5-1.el7 for package: libX11-1.6.5-1.el7.x86_64
+--> Processing Dependency: libxcb.so.1()(64bit) for package: libX11-1.6.5-1.el7.x86_64
+---> Package libcurl.x86_64 0:7.29.0-42.el7_4.1 will be updated
+---> Package libcurl.x86_64 0:7.29.0-46.el7 will be an update
+---> Package perl-Perl4-CoreLibs.noarch 0:0.003-7.el7 will be installed
+---> Package zlib-devel.x86_64 0:1.2.7-17.el7 will be installed
+--> Running transaction check
+---> Package libX11-common.noarch 0:1.6.5-1.el7 will be installed
+---> Package libxcb.x86_64 0:1.12-1.el7 will be installed
+--> Processing Dependency: libXau.so.6()(64bit) for package: libxcb-1.12-1.el7.x86_64
+--> Running transaction check
+---> Package libXau.x86_64 0:1.0.8-2.1.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                   Arch        Version                  Repository
+                                                                           Size
+================================================================================
+Installing:
+ freetype                  x86_64      2.4.11-15.el7            base      392 k
+ giflib                    x86_64      4.1.6-9.el7              base       40 k
+ giflib-devel              x86_64      4.1.6-9.el7              base       85 k
+ giflib-utils              x86_64      4.1.6-9.el7              base      110 k
+ libexif                   x86_64      0.6.21-6.el7             base      347 k
+ libexif-devel             x86_64      0.6.21-6.el7             base       21 k
+ libexif-doc               x86_64      0.6.21-6.el7             base      148 k
+ libjpeg-turbo             x86_64      1.2.90-5.el7             base      134 k
+ libjpeg-turbo-devel       x86_64      1.2.90-5.el7             base       98 k
+ libjpeg-turbo-static      x86_64      1.2.90-5.el7             base      120 k
+ libjpeg-turbo-utils       x86_64      1.2.90-5.el7             base       76 k
+ libpng                    x86_64      2:1.5.13-7.el7_2         base      213 k
+ libpng-devel              x86_64      2:1.5.13-7.el7_2         base      122 k
+ libpng-static             x86_64      2:1.5.13-7.el7_2         base       92 k
+ libpng12                  x86_64      1.2.50-10.el7            base      171 k
+ libpng12-devel            x86_64      1.2.50-10.el7            base      111 k
+Updating:
+ curl                      x86_64      7.29.0-46.el7            base      268 k
+Installing for dependencies:
+ libICE                    x86_64      1.0.9-9.el7              base       66 k
+ libSM                     x86_64      1.2.2-2.el7              base       39 k
+ libX11                    x86_64      1.6.5-1.el7              base      606 k
+ libX11-common             noarch      1.6.5-1.el7              base      164 k
+ libXau                    x86_64      1.0.8-2.1.el7            base       29 k
+ libxcb                    x86_64      1.12-1.el7               base      211 k
+ perl-Perl4-CoreLibs       noarch      0.003-7.el7              base       45 k
+ zlib-devel                x86_64      1.2.7-17.el7             base       50 k
+Updating for dependencies:
+ libcurl                   x86_64      7.29.0-46.el7            base      220 k
+
+Transaction Summary
+================================================================================
+Install  16 Packages (+8 Dependent packages)
+Upgrade   1 Package  (+1 Dependent package)
+
+Total download size: 3.9 M
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+--------------------------------------------------------------------------------
+Total                                              2.6 MB/s | 3.9 MB  00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : libICE-1.0.9-9.el7.x86_64                                   1/28 
+  Installing : libSM-1.2.2-2.el7.x86_64                                    2/28 
+  Installing : libexif-0.6.21-6.el7.x86_64                                 3/28 
+  Installing : zlib-devel-1.2.7-17.el7.x86_64                              4/28 
+  Installing : libjpeg-turbo-1.2.90-5.el7.x86_64                           5/28 
+  Installing : libjpeg-turbo-devel-1.2.90-5.el7.x86_64                     6/28 
+  Installing : libXau-1.0.8-2.1.el7.x86_64                                 7/28 
+  Installing : libxcb-1.12-1.el7.x86_64                                    8/28 
+  Installing : libX11-common-1.6.5-1.el7.noarch                            9/28 
+  Installing : libX11-1.6.5-1.el7.x86_64                                  10/28 
+  Installing : giflib-4.1.6-9.el7.x86_64                                  11/28 
+  Installing : perl-Perl4-CoreLibs-0.003-7.el7.noarch                     12/28 
+  Updating   : libcurl-7.29.0-46.el7.x86_64                               13/28 
+  Installing : libpng12-1.2.50-10.el7.x86_64                              14/28 
+  Installing : 2:libpng-1.5.13-7.el7_2.x86_64                             15/28 
+  Installing : 2:libpng-devel-1.5.13-7.el7_2.x86_64                       16/28 
+  Installing : 2:libpng-static-1.5.13-7.el7_2.x86_64                      17/28 
+  Installing : libpng12-devel-1.2.50-10.el7.x86_64                        18/28 
+  Updating   : curl-7.29.0-46.el7.x86_64                                  19/28 
+  Installing : giflib-utils-4.1.6-9.el7.x86_64                            20/28 
+  Installing : giflib-devel-4.1.6-9.el7.x86_64                            21/28 
+  Installing : libjpeg-turbo-static-1.2.90-5.el7.x86_64                   22/28 
+  Installing : libjpeg-turbo-utils-1.2.90-5.el7.x86_64                    23/28 
+  Installing : libexif-doc-0.6.21-6.el7.x86_64                            24/28 
+  Installing : libexif-devel-0.6.21-6.el7.x86_64                          25/28 
+  Installing : freetype-2.4.11-15.el7.x86_64                              26/28 
+  Cleanup    : curl-7.29.0-42.el7_4.1.x86_64                              27/28 
+  Cleanup    : libcurl-7.29.0-42.el7_4.1.x86_64                           28/28 
+  Verifying  : libpng12-devel-1.2.50-10.el7.x86_64                         1/28 
+  Verifying  : libX11-1.6.5-1.el7.x86_64                                   2/28 
+  Verifying  : libjpeg-turbo-static-1.2.90-5.el7.x86_64                    3/28 
+  Verifying  : libICE-1.0.9-9.el7.x86_64                                   4/28 
+  Verifying  : giflib-4.1.6-9.el7.x86_64                                   5/28 
+  Verifying  : libjpeg-turbo-1.2.90-5.el7.x86_64                           6/28 
+  Verifying  : curl-7.29.0-46.el7.x86_64                                   7/28 
+  Verifying  : zlib-devel-1.2.7-17.el7.x86_64                              8/28 
+  Verifying  : libexif-0.6.21-6.el7.x86_64                                 9/28 
+  Verifying  : 2:libpng-1.5.13-7.el7_2.x86_64                             10/28 
+  Verifying  : libexif-doc-0.6.21-6.el7.x86_64                            11/28 
+  Verifying  : freetype-2.4.11-15.el7.x86_64                              12/28 
+  Verifying  : libjpeg-turbo-devel-1.2.90-5.el7.x86_64                    13/28 
+  Verifying  : libpng12-1.2.50-10.el7.x86_64                              14/28 
+  Verifying  : libcurl-7.29.0-46.el7.x86_64                               15/28 
+  Verifying  : 2:libpng-devel-1.5.13-7.el7_2.x86_64                       16/28 
+  Verifying  : libxcb-1.12-1.el7.x86_64                                   17/28 
+  Verifying  : giflib-devel-4.1.6-9.el7.x86_64                            18/28 
+  Verifying  : libjpeg-turbo-utils-1.2.90-5.el7.x86_64                    19/28 
+  Verifying  : libexif-devel-0.6.21-6.el7.x86_64                          20/28 
+  Verifying  : perl-Perl4-CoreLibs-0.003-7.el7.noarch                     21/28 
+  Verifying  : giflib-utils-4.1.6-9.el7.x86_64                            22/28 
+  Verifying  : libX11-common-1.6.5-1.el7.noarch                           23/28 
+  Verifying  : 2:libpng-static-1.5.13-7.el7_2.x86_64                      24/28 
+  Verifying  : libXau-1.0.8-2.1.el7.x86_64                                25/28 
+  Verifying  : libSM-1.2.2-2.el7.x86_64                                   26/28 
+  Verifying  : curl-7.29.0-42.el7_4.1.x86_64                              27/28 
+  Verifying  : libcurl-7.29.0-42.el7_4.1.x86_64                           28/28 
+
+Installed:
+  freetype.x86_64 0:2.4.11-15.el7                                               
+  giflib.x86_64 0:4.1.6-9.el7                                                   
+  giflib-devel.x86_64 0:4.1.6-9.el7                                             
+  giflib-utils.x86_64 0:4.1.6-9.el7                                             
+  libexif.x86_64 0:0.6.21-6.el7                                                 
+  libexif-devel.x86_64 0:0.6.21-6.el7                                           
+  libexif-doc.x86_64 0:0.6.21-6.el7                                             
+  libjpeg-turbo.x86_64 0:1.2.90-5.el7                                           
+  libjpeg-turbo-devel.x86_64 0:1.2.90-5.el7                                     
+  libjpeg-turbo-static.x86_64 0:1.2.90-5.el7                                    
+  libjpeg-turbo-utils.x86_64 0:1.2.90-5.el7                                     
+  libpng.x86_64 2:1.5.13-7.el7_2                                                
+  libpng-devel.x86_64 2:1.5.13-7.el7_2                                          
+  libpng-static.x86_64 2:1.5.13-7.el7_2                                         
+  libpng12.x86_64 0:1.2.50-10.el7                                               
+  libpng12-devel.x86_64 0:1.2.50-10.el7                                         
+
+Dependency Installed:
+  libICE.x86_64 0:1.0.9-9.el7               libSM.x86_64 0:1.2.2-2.el7         
+  libX11.x86_64 0:1.6.5-1.el7               libX11-common.noarch 0:1.6.5-1.el7 
+  libXau.x86_64 0:1.0.8-2.1.el7             libxcb.x86_64 0:1.12-1.el7         
+  perl-Perl4-CoreLibs.noarch 0:0.003-7.el7  zlib-devel.x86_64 0:1.2.7-17.el7   
+
+Updated:
+  curl.x86_64 0:7.29.0-46.el7                                                   
+
+Dependency Updated:
+  libcurl.x86_64 0:7.29.0-46.el7                                                
+
+Complete!
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.corbina.net
+ * extras: mirror.corbina.net
+ * updates: mirror.corbina.net
+Resolving Dependencies
+--> Running transaction check
+---> Package rdate.x86_64 0:1.4-25.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package          Arch              Version               Repository       Size
+================================================================================
+Installing:
+ rdate            x86_64            1.4-25.el7            base             19 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 19 k
+Installed size: 29 k
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : rdate-1.4-25.el7.x86_64                                      1/1 
+  Verifying  : rdate-1.4-25.el7.x86_64                                      1/1 
+
+Installed:
+  rdate.x86_64 0:1.4-25.el7                                                     
+
+Complete!
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.corbina.net
+ * extras: mirror.corbina.net
+ * updates: mirror.corbina.net
+Package 4:perl-5.16.3-292.el7.x86_64 already installed and latest version
+Nothing to do
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.corbina.net
+ * extras: mirror.corbina.net
+ * updates: mirror.corbina.net
+Resolving Dependencies
+--> Running transaction check
+---> Package acl.x86_64 0:2.2.51-12.el7 will be updated
+---> Package acl.x86_64 0:2.2.51-14.el7 will be an update
+---> Package audit-libs.x86_64 0:2.7.6-3.el7 will be updated
+---> Package audit-libs.x86_64 0:2.8.1-3.el7 will be an update
+---> Package bash.x86_64 0:4.2.46-29.el7_4 will be updated
+---> Package bash.x86_64 0:4.2.46-30.el7 will be an update
+---> Package binutils.x86_64 0:2.25.1-32.base.el7_4.1 will be updated
+---> Package binutils.x86_64 0:2.27-28.base.el7_5.1 will be an update
+---> Package ca-certificates.noarch 0:2017.2.14-71.el7 will be updated
+---> Package ca-certificates.noarch 0:2018.2.22-70.0.el7_5 will be an update
+---> Package centos-release.x86_64 0:7-4.1708.el7.centos will be updated
+---> Package centos-release.x86_64 0:7-5.1804.1.el7.centos will be an update
+---> Package coreutils.x86_64 0:8.22-18.el7 will be updated
+---> Package coreutils.x86_64 0:8.22-21.el7 will be an update
+---> Package cpio.x86_64 0:2.11-25.el7_4 will be updated
+---> Package cpio.x86_64 0:2.11-27.el7 will be an update
+---> Package cryptsetup-libs.x86_64 0:1.7.4-3.el7_4.1 will be updated
+---> Package cryptsetup-libs.x86_64 0:1.7.4-4.el7 will be an update
+---> Package cyrus-sasl-lib.x86_64 0:2.1.26-21.el7 will be updated
+---> Package cyrus-sasl-lib.x86_64 0:2.1.26-23.el7 will be an update
+---> Package dbus.x86_64 1:1.6.12-17.el7 will be updated
+---> Package dbus.x86_64 1:1.10.24-7.el7 will be an update
+---> Package dbus-libs.x86_64 1:1.6.12-17.el7 will be updated
+---> Package dbus-libs.x86_64 1:1.10.24-7.el7 will be an update
+---> Package device-mapper.x86_64 7:1.02.140-8.el7 will be updated
+---> Package device-mapper.x86_64 7:1.02.146-4.el7 will be an update
+---> Package device-mapper-libs.x86_64 7:1.02.140-8.el7 will be updated
+---> Package device-mapper-libs.x86_64 7:1.02.146-4.el7 will be an update
+---> Package dracut.x86_64 0:033-502.el7 will be updated
+---> Package dracut.x86_64 0:033-535.el7 will be an update
+---> Package e2fsprogs-libs.x86_64 0:1.42.9-10.el7 will be updated
+---> Package e2fsprogs-libs.x86_64 0:1.42.9-12.el7_5 will be an update
+---> Package elfutils-default-yama-scope.noarch 0:0.168-8.el7 will be updated
+---> Package elfutils-default-yama-scope.noarch 0:0.170-4.el7 will be an update
+---> Package elfutils-libelf.x86_64 0:0.168-8.el7 will be updated
+---> Package elfutils-libelf.x86_64 0:0.170-4.el7 will be an update
+---> Package elfutils-libs.x86_64 0:0.168-8.el7 will be updated
+---> Package elfutils-libs.x86_64 0:0.170-4.el7 will be an update
+---> Package filesystem.x86_64 0:3.2-21.el7 will be updated
+---> Package filesystem.x86_64 0:3.2-25.el7 will be an update
+---> Package glib2.x86_64 0:2.50.3-3.el7 will be updated
+---> Package glib2.x86_64 0:2.54.2-2.el7 will be an update
+---> Package glibc.x86_64 0:2.17-196.el7_4.2 will be updated
+---> Package glibc.x86_64 0:2.17-222.el7 will be an update
+---> Package glibc-common.x86_64 0:2.17-196.el7_4.2 will be updated
+---> Package glibc-common.x86_64 0:2.17-222.el7 will be an update
+---> Package gnupg2.x86_64 0:2.0.22-4.el7 will be updated
+---> Package gnupg2.x86_64 0:2.0.22-5.el7_5 will be an update
+---> Package gzip.x86_64 0:1.5-9.el7 will be updated
+---> Package gzip.x86_64 0:1.5-10.el7 will be an update
+---> Package info.x86_64 0:5.1-4.el7 will be updated
+---> Package info.x86_64 0:5.1-5.el7 will be an update
+---> Package initscripts.x86_64 0:9.49.39-1.el7 will be updated
+---> Package initscripts.x86_64 0:9.49.41-1.el7 will be an update
+---> Package iproute.x86_64 0:3.10.0-87.el7 will be updated
+---> Package iproute.x86_64 0:4.11.0-14.el7 will be an update
+---> Package iptables.x86_64 0:1.4.21-18.2.el7_4 will be updated
+---> Package iptables.x86_64 0:1.4.21-24.1.el7_5 will be an update
+---> Package kmod.x86_64 0:20-15.el7_4.6 will be updated
+---> Package kmod.x86_64 0:20-21.el7 will be an update
+---> Package kmod-libs.x86_64 0:20-15.el7_4.6 will be updated
+---> Package kmod-libs.x86_64 0:20-21.el7 will be an update
+---> Package kpartx.x86_64 0:0.4.9-111.el7 will be updated
+---> Package kpartx.x86_64 0:0.4.9-119.el7 will be an update
+---> Package krb5-libs.x86_64 0:1.15.1-8.el7 will be updated
+---> Package krb5-libs.x86_64 0:1.15.1-19.el7 will be an update
+---> Package libacl.x86_64 0:2.2.51-12.el7 will be updated
+---> Package libacl.x86_64 0:2.2.51-14.el7 will be an update
+---> Package libattr.x86_64 0:2.4.46-12.el7 will be updated
+---> Package libattr.x86_64 0:2.4.46-13.el7 will be an update
+---> Package libblkid.x86_64 0:2.23.2-43.el7_4.2 will be updated
+---> Package libblkid.x86_64 0:2.23.2-52.el7 will be an update
+---> Package libcom_err.x86_64 0:1.42.9-10.el7 will be updated
+---> Package libcom_err.x86_64 0:1.42.9-12.el7_5 will be an update
+---> Package libdb.x86_64 0:5.3.21-20.el7 will be updated
+---> Package libdb.x86_64 0:5.3.21-24.el7 will be an update
+---> Package libdb-utils.x86_64 0:5.3.21-20.el7 will be updated
+---> Package libdb-utils.x86_64 0:5.3.21-24.el7 will be an update
+---> Package libgcc.x86_64 0:4.8.5-16.el7_4.1 will be updated
+---> Package libgcc.x86_64 0:4.8.5-28.el7_5.1 will be an update
+---> Package libmount.x86_64 0:2.23.2-43.el7_4.2 will be updated
+---> Package libmount.x86_64 0:2.23.2-52.el7 will be an update
+---> Package libpwquality.x86_64 0:1.2.3-4.el7 will be updated
+---> Package libpwquality.x86_64 0:1.2.3-5.el7 will be an update
+---> Package libselinux.x86_64 0:2.5-11.el7 will be updated
+---> Package libselinux.x86_64 0:2.5-12.el7 will be an update
+---> Package libsemanage.x86_64 0:2.5-8.el7 will be updated
+---> Package libsemanage.x86_64 0:2.5-11.el7 will be an update
+---> Package libsepol.x86_64 0:2.5-6.el7 will be updated
+---> Package libsepol.x86_64 0:2.5-8.1.el7 will be an update
+---> Package libstdc++.x86_64 0:4.8.5-16.el7_4.1 will be updated
+---> Package libstdc++.x86_64 0:4.8.5-28.el7_5.1 will be an update
+---> Package libuser.x86_64 0:0.60-7.el7_1 will be updated
+---> Package libuser.x86_64 0:0.60-9.el7 will be an update
+---> Package libuuid.x86_64 0:2.23.2-43.el7_4.2 will be updated
+---> Package libuuid.x86_64 0:2.23.2-52.el7 will be an update
+---> Package net-snmp.x86_64 1:5.7.2-28.el7 will be updated
+---> Package net-snmp.x86_64 1:5.7.2-33.el7_5.2 will be an update
+---> Package net-snmp-agent-libs.x86_64 1:5.7.2-28.el7 will be updated
+---> Package net-snmp-agent-libs.x86_64 1:5.7.2-33.el7_5.2 will be an update
+---> Package net-snmp-libs.x86_64 1:5.7.2-28.el7 will be updated
+---> Package net-snmp-libs.x86_64 1:5.7.2-33.el7_5.2 will be an update
+---> Package net-snmp-utils.x86_64 1:5.7.2-28.el7 will be updated
+---> Package net-snmp-utils.x86_64 1:5.7.2-33.el7_5.2 will be an update
+---> Package nspr.x86_64 0:4.13.1-1.0.el7_3 will be updated
+---> Package nspr.x86_64 0:4.19.0-1.el7_5 will be an update
+---> Package nss.x86_64 0:3.28.4-15.el7_4 will be updated
+---> Package nss.x86_64 0:3.36.0-5.el7_5 will be an update
+---> Package nss-softokn.x86_64 0:3.28.3-8.el7_4 will be updated
+---> Package nss-softokn.x86_64 0:3.36.0-5.el7_5 will be an update
+---> Package nss-softokn-freebl.x86_64 0:3.28.3-8.el7_4 will be updated
+---> Package nss-softokn-freebl.x86_64 0:3.36.0-5.el7_5 will be an update
+---> Package nss-sysinit.x86_64 0:3.28.4-15.el7_4 will be updated
+---> Package nss-sysinit.x86_64 0:3.36.0-5.el7_5 will be an update
+---> Package nss-tools.x86_64 0:3.28.4-15.el7_4 will be updated
+---> Package nss-tools.x86_64 0:3.36.0-5.el7_5 will be an update
+---> Package nss-util.x86_64 0:3.28.4-3.el7 will be updated
+---> Package nss-util.x86_64 0:3.36.0-1.el7_5 will be an update
+---> Package openldap.x86_64 0:2.4.44-5.el7 will be updated
+---> Package openldap.x86_64 0:2.4.44-15.el7_5 will be an update
+---> Package openssh.x86_64 0:7.4p1-13.el7_4 will be updated
+---> Package openssh.x86_64 0:7.4p1-16.el7 will be an update
+---> Package openssh-clients.x86_64 0:7.4p1-13.el7_4 will be updated
+---> Package openssh-clients.x86_64 0:7.4p1-16.el7 will be an update
+---> Package openssh-server.x86_64 0:7.4p1-13.el7_4 will be updated
+---> Package openssh-server.x86_64 0:7.4p1-16.el7 will be an update
+---> Package openssl-libs.x86_64 1:1.0.2k-8.el7 will be updated
+---> Package openssl-libs.x86_64 1:1.0.2k-12.el7 will be an update
+---> Package pam.x86_64 0:1.1.8-18.el7 will be updated
+---> Package pam.x86_64 0:1.1.8-22.el7 will be an update
+---> Package perl-Getopt-Long.noarch 0:2.40-2.el7 will be updated
+---> Package perl-Getopt-Long.noarch 0:2.40-3.el7 will be an update
+---> Package procps-ng.x86_64 0:3.3.10-16.el7 will be updated
+---> Package procps-ng.x86_64 0:3.3.10-17.el7_5.2 will be an update
+---> Package python.x86_64 0:2.7.5-58.el7 will be updated
+---> Package python.x86_64 0:2.7.5-69.el7_5 will be an update
+---> Package python-libs.x86_64 0:2.7.5-58.el7 will be updated
+---> Package python-libs.x86_64 0:2.7.5-69.el7_5 will be an update
+---> Package quota.x86_64 1:4.01-14.el7 will be updated
+---> Package quota.x86_64 1:4.01-17.el7 will be an update
+---> Package quota-nls.noarch 1:4.01-14.el7 will be updated
+---> Package quota-nls.noarch 1:4.01-17.el7 will be an update
+---> Package rpcbind.x86_64 0:0.2.0-42.el7 will be updated
+---> Package rpcbind.x86_64 0:0.2.0-44.el7 will be an update
+---> Package rpm.x86_64 0:4.11.3-25.el7 will be updated
+---> Package rpm.x86_64 0:4.11.3-32.el7 will be an update
+---> Package rpm-build-libs.x86_64 0:4.11.3-25.el7 will be updated
+---> Package rpm-build-libs.x86_64 0:4.11.3-32.el7 will be an update
+---> Package rpm-libs.x86_64 0:4.11.3-25.el7 will be updated
+---> Package rpm-libs.x86_64 0:4.11.3-32.el7 will be an update
+---> Package rpm-python.x86_64 0:4.11.3-25.el7 will be updated
+---> Package rpm-python.x86_64 0:4.11.3-32.el7 will be an update
+---> Package setup.noarch 0:2.8.71-7.el7 will be updated
+---> Package setup.noarch 0:2.8.71-9.el7 will be an update
+---> Package shared-mime-info.x86_64 0:1.8-3.el7 will be updated
+---> Package shared-mime-info.x86_64 0:1.8-4.el7 will be an update
+---> Package systemd.x86_64 0:219-42.el7_4.4 will be updated
+---> Package systemd.x86_64 0:219-57.el7 will be an update
+--> Processing Dependency: liblz4.so.1()(64bit) for package: systemd-219-57.el7.x86_64
+---> Package systemd-libs.x86_64 0:219-42.el7_4.4 will be updated
+---> Package systemd-libs.x86_64 0:219-57.el7 will be an update
+---> Package systemd-sysv.x86_64 0:219-42.el7_4.4 will be updated
+---> Package systemd-sysv.x86_64 0:219-57.el7 will be an update
+---> Package tar.x86_64 2:1.26-32.el7 will be updated
+---> Package tar.x86_64 2:1.26-34.el7 will be an update
+---> Package tzdata.noarch 0:2017c-1.el7 will be updated
+---> Package tzdata.noarch 0:2018e-3.el7 will be an update
+---> Package util-linux.x86_64 0:2.23.2-43.el7_4.2 will be updated
+---> Package util-linux.x86_64 0:2.23.2-52.el7 will be an update
+---> Package vim-minimal.x86_64 2:7.4.160-2.el7 will be updated
+---> Package vim-minimal.x86_64 2:7.4.160-4.el7 will be an update
+---> Package yum.noarch 0:3.4.3-154.el7.centos will be updated
+---> Package yum.noarch 0:3.4.3-158.el7.centos will be an update
+---> Package yum-plugin-fastestmirror.noarch 0:1.1.31-42.el7 will be updated
+---> Package yum-plugin-fastestmirror.noarch 0:1.1.31-46.el7_5 will be an update
+--> Running transaction check
+---> Package lz4.x86_64 0:1.7.5-2.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                       Arch     Version                 Repository
+                                                                           Size
+================================================================================
+Updating:
+ acl                           x86_64   2.2.51-14.el7           base       81 k
+ audit-libs                    x86_64   2.8.1-3.el7             base       99 k
+ bash                          x86_64   4.2.46-30.el7           base      1.0 M
+ binutils                      x86_64   2.27-28.base.el7_5.1    updates   5.9 M
+ ca-certificates               noarch   2018.2.22-70.0.el7_5    updates   392 k
+ centos-release                x86_64   7-5.1804.1.el7.centos   updates    24 k
+ coreutils                     x86_64   8.22-21.el7             base      3.3 M
+ cpio                          x86_64   2.11-27.el7             base      211 k
+ cryptsetup-libs               x86_64   1.7.4-4.el7             base      223 k
+ cyrus-sasl-lib                x86_64   2.1.26-23.el7           base      155 k
+ dbus                          x86_64   1:1.10.24-7.el7         base      245 k
+ dbus-libs                     x86_64   1:1.10.24-7.el7         base      169 k
+ device-mapper                 x86_64   7:1.02.146-4.el7        base      289 k
+ device-mapper-libs            x86_64   7:1.02.146-4.el7        base      316 k
+ dracut                        x86_64   033-535.el7             base      325 k
+ e2fsprogs-libs                x86_64   1.42.9-12.el7_5         updates   167 k
+ elfutils-default-yama-scope   noarch   0.170-4.el7             base       31 k
+ elfutils-libelf               x86_64   0.170-4.el7             base      195 k
+ elfutils-libs                 x86_64   0.170-4.el7             base      267 k
+ filesystem                    x86_64   3.2-25.el7              base      1.0 M
+ glib2                         x86_64   2.54.2-2.el7            base      2.4 M
+ glibc                         x86_64   2.17-222.el7            base      3.6 M
+ glibc-common                  x86_64   2.17-222.el7            base       11 M
+ gnupg2                        x86_64   2.0.22-5.el7_5          updates   1.5 M
+ gzip                          x86_64   1.5-10.el7              base      130 k
+ info                          x86_64   5.1-5.el7               base      233 k
+ initscripts                   x86_64   9.49.41-1.el7           base      437 k
+ iproute                       x86_64   4.11.0-14.el7           base      763 k
+ iptables                      x86_64   1.4.21-24.1.el7_5       updates   432 k
+ kmod                          x86_64   20-21.el7               base      121 k
+ kmod-libs                     x86_64   20-21.el7               base       50 k
+ kpartx                        x86_64   0.4.9-119.el7           base       75 k
+ krb5-libs                     x86_64   1.15.1-19.el7           updates   747 k
+ libacl                        x86_64   2.2.51-14.el7           base       27 k
+ libattr                       x86_64   2.4.46-13.el7           base       18 k
+ libblkid                      x86_64   2.23.2-52.el7           base      178 k
+ libcom_err                    x86_64   1.42.9-12.el7_5         updates    41 k
+ libdb                         x86_64   5.3.21-24.el7           base      720 k
+ libdb-utils                   x86_64   5.3.21-24.el7           base      132 k
+ libgcc                        x86_64   4.8.5-28.el7_5.1        updates   101 k
+ libmount                      x86_64   2.23.2-52.el7           base      180 k
+ libpwquality                  x86_64   1.2.3-5.el7             base       85 k
+ libselinux                    x86_64   2.5-12.el7              base      162 k
+ libsemanage                   x86_64   2.5-11.el7              base      150 k
+ libsepol                      x86_64   2.5-8.1.el7             base      297 k
+ libstdc++                     x86_64   4.8.5-28.el7_5.1        updates   303 k
+ libuser                       x86_64   0.60-9.el7              base      400 k
+ libuuid                       x86_64   2.23.2-52.el7           base       81 k
+ net-snmp                      x86_64   1:5.7.2-33.el7_5.2      updates   330 k
+ net-snmp-agent-libs           x86_64   1:5.7.2-33.el7_5.2      updates   705 k
+ net-snmp-libs                 x86_64   1:5.7.2-33.el7_5.2      updates   749 k
+ net-snmp-utils                x86_64   1:5.7.2-33.el7_5.2      updates   198 k
+ nspr                          x86_64   4.19.0-1.el7_5          updates   127 k
+ nss                           x86_64   3.36.0-5.el7_5          updates   835 k
+ nss-softokn                   x86_64   3.36.0-5.el7_5          updates   315 k
+ nss-softokn-freebl            x86_64   3.36.0-5.el7_5          updates   222 k
+ nss-sysinit                   x86_64   3.36.0-5.el7_5          updates    62 k
+ nss-tools                     x86_64   3.36.0-5.el7_5          updates   514 k
+ nss-util                      x86_64   3.36.0-1.el7_5          updates    78 k
+ openldap                      x86_64   2.4.44-15.el7_5         updates   355 k
+ openssh                       x86_64   7.4p1-16.el7            base      510 k
+ openssh-clients               x86_64   7.4p1-16.el7            base      655 k
+ openssh-server                x86_64   7.4p1-16.el7            base      458 k
+ openssl-libs                  x86_64   1:1.0.2k-12.el7         base      1.2 M
+ pam                           x86_64   1.1.8-22.el7            base      720 k
+ perl-Getopt-Long              noarch   2.40-3.el7              base       56 k
+ procps-ng                     x86_64   3.3.10-17.el7_5.2       updates   290 k
+ python                        x86_64   2.7.5-69.el7_5          updates    93 k
+ python-libs                   x86_64   2.7.5-69.el7_5          updates   5.6 M
+ quota                         x86_64   1:4.01-17.el7           base      179 k
+ quota-nls                     noarch   1:4.01-17.el7           base       90 k
+ rpcbind                       x86_64   0.2.0-44.el7            base       59 k
+ rpm                           x86_64   4.11.3-32.el7           base      1.2 M
+ rpm-build-libs                x86_64   4.11.3-32.el7           base      105 k
+ rpm-libs                      x86_64   4.11.3-32.el7           base      276 k
+ rpm-python                    x86_64   4.11.3-32.el7           base       82 k
+ setup                         noarch   2.8.71-9.el7            base      166 k
+ shared-mime-info              x86_64   1.8-4.el7               base      312 k
+ systemd                       x86_64   219-57.el7              base      5.0 M
+ systemd-libs                  x86_64   219-57.el7              base      402 k
+ systemd-sysv                  x86_64   219-57.el7              base       79 k
+ tar                           x86_64   2:1.26-34.el7           base      845 k
+ tzdata                        noarch   2018e-3.el7             updates   482 k
+ util-linux                    x86_64   2.23.2-52.el7           base      2.0 M
+ vim-minimal                   x86_64   2:7.4.160-4.el7         base      437 k
+ yum                           noarch   3.4.3-158.el7.centos    base      1.2 M
+ yum-plugin-fastestmirror      noarch   1.1.31-46.el7_5         updates    33 k
+Installing for dependencies:
+ lz4                           x86_64   1.7.5-2.el7             base       98 k
+
+Transaction Summary
+================================================================================
+Install              ( 1 Dependent package)
+Upgrade  87 Packages
+
+Total download size: 66 M
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+--------------------------------------------------------------------------------
+Total                                              5.3 MB/s |  66 MB  00:12     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Updating   : libgcc-4.8.5-28.el7_5.1.x86_64                             1/175 
+  Updating   : 1:quota-nls-4.01-17.el7.noarch                             2/175 
+  Updating   : tzdata-2018e-3.el7.noarch                                  3/175 
+  Updating   : glibc-common-2.17-222.el7.x86_64                           4/175 
+  Updating   : nss-softokn-freebl-3.36.0-5.el7_5.x86_64                   5/175 
+  Updating   : glibc-2.17-222.el7.x86_64                                  6/175 
+  Updating   : bash-4.2.46-30.el7.x86_64                                  7/175 
+  Updating   : nspr-4.19.0-1.el7_5.x86_64                                 8/175 
+  Updating   : nss-util-3.36.0-1.el7_5.x86_64                             9/175 
+  Updating   : libsepol-2.5-8.1.el7.x86_64                               10/175 
+  Updating   : libselinux-2.5-12.el7.x86_64                              11/175 
+  Updating   : libdb-5.3.21-24.el7.x86_64                                12/175 
+  Updating   : audit-libs-2.8.1-3.el7.x86_64                             13/175 
+  Updating   : libcom_err-1.42.9-12.el7_5.x86_64                         14/175 
+  Updating   : info-5.1-5.el7.x86_64                                     15/175 
+  Updating   : elfutils-libelf-0.170-4.el7.x86_64                        16/175 
+  Updating   : cpio-2.11-27.el7.x86_64                                   17/175 
+  Updating   : libuuid-2.23.2-52.el7.x86_64                              18/175 
+  Updating   : libattr-2.4.46-13.el7.x86_64                              19/175 
+  Updating   : libacl-2.2.51-14.el7.x86_64                               20/175 
+  Updating   : nss-softokn-3.36.0-5.el7_5.x86_64                         21/175 
+  Installing : lz4-1.7.5-2.el7.x86_64                                    22/175 
+  Updating   : acl-2.2.51-14.el7.x86_64                                  23/175 
+  Updating   : 2:tar-1.26-34.el7.x86_64                                  24/175 
+  Updating   : e2fsprogs-libs-1.42.9-12.el7_5.x86_64                     25/175 
+  Updating   : libdb-utils-5.3.21-24.el7.x86_64                          26/175 
+  Updating   : iptables-1.4.21-24.1.el7_5.x86_64                         27/175 
+  Updating   : iproute-4.11.0-14.el7.x86_64                              28/175 
+  Updating   : ca-certificates-2018.2.22-70.0.el7_5.noarch               29/175 
+  Updating   : coreutils-8.22-21.el7.x86_64                              30/175 
+  Updating   : 1:openssl-libs-1.0.2k-12.el7.x86_64                       31/175 
+  Updating   : krb5-libs-1.15.1-19.el7.x86_64                            32/175 
+  Updating   : libpwquality-1.2.3-5.el7.x86_64                           33/175 
+  Updating   : pam-1.1.8-22.el7.x86_64                                   34/175 
+  Updating   : 1:net-snmp-libs-5.7.2-33.el7_5.2.x86_64                   35/175 
+  Updating   : centos-release-7-5.1804.1.el7.centos.x86_64               36/175 
+  Updating   : libblkid-2.23.2-52.el7.x86_64                             37/175 
+  Updating   : libmount-2.23.2-52.el7.x86_64                             38/175 
+  Updating   : glib2-2.54.2-2.el7.x86_64                                 39/175 
+  Updating   : shared-mime-info-1.8-4.el7.x86_64                         40/175 
+  Updating   : setup-2.8.71-9.el7.noarch                                 41/175 
+warning: /etc/group created as /etc/group.rpmnew
+warning: /etc/shadow created as /etc/shadow.rpmnew
+  Updating   : python-libs-2.7.5-69.el7_5.x86_64                         42/175 
+  Updating   : python-2.7.5-69.el7_5.x86_64                              43/175 
+  Updating   : gzip-1.5-10.el7.x86_64                                    44/175 
+  Updating   : filesystem-3.2-25.el7.x86_64                              45/175 
+  Updating   : cyrus-sasl-lib-2.1.26-23.el7.x86_64                       46/175 
+  Updating   : binutils-2.27-28.base.el7_5.1.x86_64                      47/175 
+  Updating   : nss-3.36.0-5.el7_5.x86_64                                 48/175 
+  Updating   : nss-sysinit-3.36.0-5.el7_5.x86_64                         49/175 
+  Updating   : rpm-4.11.3-32.el7.x86_64                                  50/175 
+  Updating   : rpm-libs-4.11.3-32.el7.x86_64                             51/175 
+  Updating   : 1:net-snmp-agent-libs-5.7.2-33.el7_5.2.x86_64             52/175 
+  Updating   : nss-tools-3.36.0-5.el7_5.x86_64                           53/175 
+  Updating   : openldap-2.4.44-15.el7_5.x86_64                           54/175 
+  Updating   : libuser-0.60-9.el7.x86_64                                 55/175 
+  Updating   : gnupg2-2.0.22-5.el7_5.x86_64                              56/175 
+  Updating   : rpm-build-libs-4.11.3-32.el7.x86_64                       57/175 
+  Updating   : rpm-python-4.11.3-32.el7.x86_64                           58/175 
+  Updating   : yum-plugin-fastestmirror-1.1.31-46.el7_5.noarch           59/175 
+  Updating   : yum-3.4.3-158.el7.centos.noarch                           60/175 
+  Updating   : kmod-libs-20-21.el7.x86_64                                61/175 
+  Updating   : util-linux-2.23.2-52.el7.x86_64                           62/175 
+  Updating   : 7:device-mapper-1.02.146-4.el7.x86_64                     63/175 
+  Updating   : kpartx-0.4.9-119.el7.x86_64                               64/175 
+  Updating   : procps-ng-3.3.10-17.el7_5.2.x86_64                        65/175 
+  Updating   : 7:device-mapper-libs-1.02.146-4.el7.x86_64                66/175 
+  Updating   : cryptsetup-libs-1.7.4-4.el7.x86_64                        67/175 
+  Updating   : dracut-033-535.el7.x86_64                                 68/175 
+  Updating   : kmod-20-21.el7.x86_64                                     69/175 
+  Updating   : elfutils-libs-0.170-4.el7.x86_64                          70/175 
+  Updating   : systemd-libs-219-57.el7.x86_64                            71/175 
+  Updating   : 1:dbus-libs-1.10.24-7.el7.x86_64                          72/175 
+  Updating   : systemd-219-57.el7.x86_64                                 73/175 
+  Updating   : 1:dbus-1.10.24-7.el7.x86_64                               74/175 
+  Updating   : elfutils-default-yama-scope-0.170-4.el7.noarch            75/175 
+  Updating   : systemd-sysv-219-57.el7.x86_64                            76/175 
+  Updating   : openssh-7.4p1-16.el7.x86_64                               77/175 
+  Updating   : rpcbind-0.2.0-44.el7.x86_64                               78/175 
+  Updating   : initscripts-9.49.41-1.el7.x86_64                          79/175 
+  Updating   : 1:net-snmp-5.7.2-33.el7_5.2.x86_64                        80/175 
+  Updating   : 1:quota-4.01-17.el7.x86_64                                81/175 
+  Updating   : openssh-server-7.4p1-16.el7.x86_64                        82/175 
+  Updating   : openssh-clients-7.4p1-16.el7.x86_64                       83/175 
+  Updating   : 1:net-snmp-utils-5.7.2-33.el7_5.2.x86_64                  84/175 
+  Updating   : 2:vim-minimal-7.4.160-4.el7.x86_64                        85/175 
+  Updating   : libsemanage-2.5-11.el7.x86_64                             86/175 
+  Updating   : libstdc++-4.8.5-28.el7_5.1.x86_64                         87/175 
+  Updating   : perl-Getopt-Long-2.40-3.el7.noarch                        88/175 
+  Cleanup    : yum-3.4.3-154.el7.centos.noarch                           89/175 
+  Cleanup    : yum-plugin-fastestmirror-1.1.31-42.el7.noarch             90/175 
+  Cleanup    : perl-Getopt-Long-2.40-2.el7.noarch                        91/175 
+  Cleanup    : openssh-server-7.4p1-13.el7_4.x86_64                      92/175 
+  Cleanup    : rpm-python-4.11.3-25.el7.x86_64                           93/175 
+  Cleanup    : 1:net-snmp-5.7.2-28.el7.x86_64                            94/175 
+  Cleanup    : rpm-build-libs-4.11.3-25.el7.x86_64                       95/175 
+
+UPGRADE: Automatically re-enabling default systemd units:
+	brandbot.path
+	rhel-autorelabel.service
+	rhel-autorelabel-mark.service
+	rhel-configure.service
+	rhel-dmesg.service
+	rhel-domainname.service
+	rhel-import-state.service
+	rhel-loadmodules.service
+	rhel-readonly.service
+
+  Cleanup    : initscripts-9.49.39-1.el7.x86_64                          96/175 
+  Cleanup    : openssh-clients-7.4p1-13.el7_4.x86_64                     97/175 
+  Cleanup    : openssh-7.4p1-13.el7_4.x86_64                             98/175 
+  Cleanup    : 1:net-snmp-agent-libs-5.7.2-28.el7.x86_64                 99/175 
+  Cleanup    : 1:quota-4.01-14.el7.x86_64                               100/175 
+  Cleanup    : rpcbind-0.2.0-42.el7.x86_64                              101/175 
+  Cleanup    : iproute-3.10.0-87.el7.x86_64                             102/175 
+  Cleanup    : 1:net-snmp-utils-5.7.2-28.el7.x86_64                     103/175 
+  Cleanup    : libsemanage-2.5-8.el7.x86_64                             104/175 
+  Cleanup    : gnupg2-2.0.22-4.el7.x86_64                               105/175 
+  Cleanup    : 2:vim-minimal-7.4.160-2.el7.x86_64                       106/175 
+  Cleanup    : 1:net-snmp-libs-5.7.2-28.el7.x86_64                      107/175 
+  Cleanup    : e2fsprogs-libs-1.42.9-10.el7.x86_64                      108/175 
+  Cleanup    : libstdc++-4.8.5-16.el7_4.1.x86_64                        109/175 
+  Cleanup    : systemd-sysv-219-42.el7_4.4.x86_64                       110/175 
+  Cleanup    : 1:quota-nls-4.01-14.el7.noarch                           111/175 
+  Cleanup    : kpartx-0.4.9-111.el7.x86_64                              112/175 
+  Cleanup    : cryptsetup-libs-1.7.4-3.el7_4.1.x86_64                   113/175 
+  Cleanup    : kmod-20-15.el7_4.6.x86_64                                114/175 
+  Cleanup    : dracut-033-502.el7.x86_64                                115/175 
+  Cleanup    : 7:device-mapper-libs-1.02.140-8.el7.x86_64               116/175 
+  Cleanup    : 7:device-mapper-1.02.140-8.el7.x86_64                    117/175 
+  Cleanup    : 1:dbus-1.6.12-17.el7.x86_64                              118/175 
+  Cleanup    : systemd-219-42.el7_4.4.x86_64                            119/175 
+  Cleanup    : util-linux-2.23.2-43.el7_4.2.x86_64                      120/175 
+  Cleanup    : libuser-0.60-7.el7_1.x86_64                              121/175 
+  Cleanup    : openldap-2.4.44-5.el7.x86_64                             122/175 
+  Cleanup    : rpm-libs-4.11.3-25.el7.x86_64                            123/175 
+  Cleanup    : rpm-4.11.3-25.el7.x86_64                                 124/175 
+  Cleanup    : nss-tools-3.28.4-15.el7_4.x86_64                         125/175 
+  Cleanup    : nss-sysinit-3.28.4-15.el7_4.x86_64                       126/175 
+  Cleanup    : nss-3.28.4-15.el7_4.x86_64                               127/175 
+  Cleanup    : nss-softokn-3.28.3-8.el7_4.x86_64                        128/175 
+  Cleanup    : shared-mime-info-1.8-3.el7.x86_64                        129/175 
+  Cleanup    : glib2-2.50.3-3.el7.x86_64                                130/175 
+  Cleanup    : binutils-2.25.1-32.base.el7_4.1.x86_64                   131/175 
+  Cleanup    : libmount-2.23.2-43.el7_4.2.x86_64                        132/175 
+  Cleanup    : libblkid-2.23.2-43.el7_4.2.x86_64                        133/175 
+  Cleanup    : 2:tar-1.26-32.el7.x86_64                                 134/175 
+  Cleanup    : nss-util-3.28.4-3.el7.x86_64                             135/175 
+  Cleanup    : python-2.7.5-58.el7.x86_64                               136/175 
+  Cleanup    : python-libs-2.7.5-58.el7.x86_64                          137/175 
+  Cleanup    : gzip-1.5-9.el7.x86_64                                    138/175 
+  Cleanup    : libdb-utils-5.3.21-20.el7.x86_64                         139/175 
+  Cleanup    : cyrus-sasl-lib-2.1.26-21.el7.x86_64                      140/175 
+  Cleanup    : acl-2.2.51-12.el7.x86_64                                 141/175 
+  Cleanup    : kmod-libs-20-15.el7_4.6.x86_64                           142/175 
+  Cleanup    : cpio-2.11-25.el7_4.x86_64                                143/175 
+  Cleanup    : procps-ng-3.3.10-16.el7.x86_64                           144/175 
+  Cleanup    : systemd-libs-219-42.el7_4.4.x86_64                       145/175 
+  Cleanup    : libpwquality-1.2.3-4.el7.x86_64                          146/175 
+  Cleanup    : pam-1.1.8-18.el7.x86_64                                  147/175 
+  Cleanup    : krb5-libs-1.15.1-8.el7.x86_64                            148/175 
+  Cleanup    : coreutils-8.22-18.el7.x86_64                             149/175 
+  Cleanup    : 1:openssl-libs-1.0.2k-8.el7.x86_64                       150/175 
+  Cleanup    : elfutils-libs-0.168-8.el7.x86_64                         151/175 
+  Cleanup    : libacl-2.2.51-12.el7.x86_64                              152/175 
+  Cleanup    : info-5.1-4.el7.x86_64                                    153/175 
+  Cleanup    : iptables-1.4.21-18.2.el7_4.x86_64                        154/175 
+  Cleanup    : elfutils-default-yama-scope-0.168-8.el7.noarch           155/175 
+  Cleanup    : ca-certificates-2017.2.14-71.el7.noarch                  156/175 
+  Cleanup    : filesystem-3.2-21.el7.x86_64                             157/175 
+  Cleanup    : setup-2.8.71-7.el7.noarch                                158/175 
+  Cleanup    : libattr-2.4.46-12.el7.x86_64                             159/175 
+  Cleanup    : elfutils-libelf-0.168-8.el7.x86_64                       160/175 
+  Cleanup    : libcom_err-1.42.9-10.el7.x86_64                          161/175 
+  Cleanup    : audit-libs-2.7.6-3.el7.x86_64                            162/175 
+  Cleanup    : libdb-5.3.21-20.el7.x86_64                               163/175 
+  Cleanup    : libuuid-2.23.2-43.el7_4.2.x86_64                         164/175 
+  Cleanup    : 1:dbus-libs-1.6.12-17.el7.x86_64                         165/175 
+  Cleanup    : centos-release-7-4.1708.el7.centos.x86_64                166/175 
+  Cleanup    : libsepol-2.5-6.el7.x86_64                                167/175 
+  Cleanup    : libselinux-2.5-11.el7.x86_64                             168/175 
+  Cleanup    : glibc-common-2.17-196.el7_4.2.x86_64                     169/175 
+  Cleanup    : bash-4.2.46-29.el7_4.x86_64                              170/175 
+  Cleanup    : nspr-4.13.1-1.0.el7_3.x86_64                             171/175 
+  Cleanup    : nss-softokn-freebl-3.28.3-8.el7_4.x86_64                 172/175 
+  Cleanup    : glibc-2.17-196.el7_4.2.x86_64                            173/175 
+  Cleanup    : tzdata-2017c-1.el7.noarch                                174/175 
+  Cleanup    : libgcc-4.8.5-16.el7_4.1.x86_64                           175/175 
+  Verifying  : acl-2.2.51-14.el7.x86_64                                   1/175 
+  Verifying  : perl-Getopt-Long-2.40-3.el7.noarch                         2/175 
+  Verifying  : gzip-1.5-10.el7.x86_64                                     3/175 
+  Verifying  : dracut-033-535.el7.x86_64                                  4/175 
+  Verifying  : 1:net-snmp-5.7.2-33.el7_5.2.x86_64                         5/175 
+  Verifying  : util-linux-2.23.2-52.el7.x86_64                            6/175 
+  Verifying  : systemd-sysv-219-57.el7.x86_64                             7/175 
+  Verifying  : audit-libs-2.8.1-3.el7.x86_64                              8/175 
+  Verifying  : libcom_err-1.42.9-12.el7_5.x86_64                          9/175 
+  Verifying  : openssh-7.4p1-16.el7.x86_64                               10/175 
+  Verifying  : 7:device-mapper-1.02.146-4.el7.x86_64                     11/175 
+  Verifying  : pam-1.1.8-22.el7.x86_64                                   12/175 
+  Verifying  : 7:device-mapper-libs-1.02.146-4.el7.x86_64                13/175 
+  Verifying  : rpm-4.11.3-32.el7.x86_64                                  14/175 
+  Verifying  : yum-plugin-fastestmirror-1.1.31-46.el7_5.noarch           15/175 
+  Verifying  : setup-2.8.71-9.el7.noarch                                 16/175 
+  Verifying  : filesystem-3.2-25.el7.x86_64                              17/175 
+  Verifying  : 1:dbus-libs-1.10.24-7.el7.x86_64                          18/175 
+  Verifying  : openssh-server-7.4p1-16.el7.x86_64                        19/175 
+  Verifying  : iproute-4.11.0-14.el7.x86_64                              20/175 
+  Verifying  : 1:openssl-libs-1.0.2k-12.el7.x86_64                       21/175 
+  Verifying  : nss-util-3.36.0-1.el7_5.x86_64                            22/175 
+  Verifying  : libselinux-2.5-12.el7.x86_64                              23/175 
+  Verifying  : 2:vim-minimal-7.4.160-4.el7.x86_64                        24/175 
+  Verifying  : iptables-1.4.21-24.1.el7_5.x86_64                         25/175 
+  Verifying  : nss-3.36.0-5.el7_5.x86_64                                 26/175 
+  Verifying  : glibc-2.17-222.el7.x86_64                                 27/175 
+  Verifying  : info-5.1-5.el7.x86_64                                     28/175 
+  Verifying  : libgcc-4.8.5-28.el7_5.1.x86_64                            29/175 
+  Verifying  : libdb-utils-5.3.21-24.el7.x86_64                          30/175 
+  Verifying  : lz4-1.7.5-2.el7.x86_64                                    31/175 
+  Verifying  : bash-4.2.46-30.el7.x86_64                                 32/175 
+  Verifying  : python-2.7.5-69.el7_5.x86_64                              33/175 
+  Verifying  : coreutils-8.22-21.el7.x86_64                              34/175 
+  Verifying  : libsepol-2.5-8.1.el7.x86_64                               35/175 
+  Verifying  : initscripts-9.49.41-1.el7.x86_64                          36/175 
+  Verifying  : ca-certificates-2018.2.22-70.0.el7_5.noarch               37/175 
+  Verifying  : openldap-2.4.44-15.el7_5.x86_64                           38/175 
+  Verifying  : libuser-0.60-9.el7.x86_64                                 39/175 
+  Verifying  : rpm-build-libs-4.11.3-32.el7.x86_64                       40/175 
+  Verifying  : shared-mime-info-1.8-4.el7.x86_64                         41/175 
+  Verifying  : centos-release-7-5.1804.1.el7.centos.x86_64               42/175 
+  Verifying  : libuuid-2.23.2-52.el7.x86_64                              43/175 
+  Verifying  : libsemanage-2.5-11.el7.x86_64                             44/175 
+  Verifying  : tzdata-2018e-3.el7.noarch                                 45/175 
+  Verifying  : libmount-2.23.2-52.el7.x86_64                             46/175 
+  Verifying  : cpio-2.11-27.el7.x86_64                                   47/175 
+  Verifying  : libattr-2.4.46-13.el7.x86_64                              48/175 
+  Verifying  : gnupg2-2.0.22-5.el7_5.x86_64                              49/175 
+  Verifying  : yum-3.4.3-158.el7.centos.noarch                           50/175 
+  Verifying  : kmod-20-21.el7.x86_64                                     51/175 
+  Verifying  : python-libs-2.7.5-69.el7_5.x86_64                         52/175 
+  Verifying  : elfutils-libs-0.170-4.el7.x86_64                          53/175 
+  Verifying  : libdb-5.3.21-24.el7.x86_64                                54/175 
+  Verifying  : e2fsprogs-libs-1.42.9-12.el7_5.x86_64                     55/175 
+  Verifying  : rpcbind-0.2.0-44.el7.x86_64                               56/175 
+  Verifying  : glibc-common-2.17-222.el7.x86_64                          57/175 
+  Verifying  : 1:net-snmp-agent-libs-5.7.2-33.el7_5.2.x86_64             58/175 
+  Verifying  : 1:quota-4.01-17.el7.x86_64                                59/175 
+  Verifying  : binutils-2.27-28.base.el7_5.1.x86_64                      60/175 
+  Verifying  : procps-ng-3.3.10-17.el7_5.2.x86_64                        61/175 
+  Verifying  : rpm-python-4.11.3-32.el7.x86_64                           62/175 
+  Verifying  : nss-softokn-freebl-3.36.0-5.el7_5.x86_64                  63/175 
+  Verifying  : nspr-4.19.0-1.el7_5.x86_64                                64/175 
+  Verifying  : openssh-clients-7.4p1-16.el7.x86_64                       65/175 
+  Verifying  : nss-softokn-3.36.0-5.el7_5.x86_64                         66/175 
+  Verifying  : elfutils-libelf-0.170-4.el7.x86_64                        67/175 
+  Verifying  : nss-tools-3.36.0-5.el7_5.x86_64                           68/175 
+  Verifying  : 1:net-snmp-libs-5.7.2-33.el7_5.2.x86_64                   69/175 
+  Verifying  : libblkid-2.23.2-52.el7.x86_64                             70/175 
+  Verifying  : 1:net-snmp-utils-5.7.2-33.el7_5.2.x86_64                  71/175 
+  Verifying  : cryptsetup-libs-1.7.4-4.el7.x86_64                        72/175 
+  Verifying  : 1:dbus-1.10.24-7.el7.x86_64                               73/175 
+  Verifying  : kpartx-0.4.9-119.el7.x86_64                               74/175 
+  Verifying  : nss-sysinit-3.36.0-5.el7_5.x86_64                         75/175 
+  Verifying  : 1:quota-nls-4.01-17.el7.noarch                            76/175 
+  Verifying  : kmod-libs-20-21.el7.x86_64                                77/175 
+  Verifying  : rpm-libs-4.11.3-32.el7.x86_64                             78/175 
+  Verifying  : libacl-2.2.51-14.el7.x86_64                               79/175 
+  Verifying  : systemd-219-57.el7.x86_64                                 80/175 
+  Verifying  : krb5-libs-1.15.1-19.el7.x86_64                            81/175 
+  Verifying  : systemd-libs-219-57.el7.x86_64                            82/175 
+  Verifying  : elfutils-default-yama-scope-0.170-4.el7.noarch            83/175 
+  Verifying  : glib2-2.54.2-2.el7.x86_64                                 84/175 
+  Verifying  : 2:tar-1.26-34.el7.x86_64                                  85/175 
+  Verifying  : libpwquality-1.2.3-5.el7.x86_64                           86/175 
+  Verifying  : cyrus-sasl-lib-2.1.26-23.el7.x86_64                       87/175 
+  Verifying  : libstdc++-4.8.5-28.el7_5.1.x86_64                         88/175 
+  Verifying  : tzdata-2017c-1.el7.noarch                                 89/175 
+  Verifying  : rpm-4.11.3-25.el7.x86_64                                  90/175 
+  Verifying  : 1:quota-nls-4.01-14.el7.noarch                            91/175 
+  Verifying  : nss-util-3.28.4-3.el7.x86_64                              92/175 
+  Verifying  : 1:dbus-1.6.12-17.el7.x86_64                               93/175 
+  Verifying  : 7:device-mapper-1.02.140-8.el7.x86_64                     94/175 
+  Verifying  : libgcc-4.8.5-16.el7_4.1.x86_64                            95/175 
+  Verifying  : elfutils-libs-0.168-8.el7.x86_64                          96/175 
+  Verifying  : ca-certificates-2017.2.14-71.el7.noarch                   97/175 
+  Verifying  : openssh-clients-7.4p1-13.el7_4.x86_64                     98/175 
+  Verifying  : libcom_err-1.42.9-10.el7.x86_64                           99/175 
+  Verifying  : openssh-server-7.4p1-13.el7_4.x86_64                     100/175 
+  Verifying  : centos-release-7-4.1708.el7.centos.x86_64                101/175 
+  Verifying  : cyrus-sasl-lib-2.1.26-21.el7.x86_64                      102/175 
+  Verifying  : libuser-0.60-7.el7_1.x86_64                              103/175 
+  Verifying  : libacl-2.2.51-12.el7.x86_64                              104/175 
+  Verifying  : cryptsetup-libs-1.7.4-3.el7_4.1.x86_64                   105/175 
+  Verifying  : krb5-libs-1.15.1-8.el7.x86_64                            106/175 
+  Verifying  : libdb-5.3.21-20.el7.x86_64                               107/175 
+  Verifying  : glibc-2.17-196.el7_4.2.x86_64                            108/175 
+  Verifying  : 1:net-snmp-5.7.2-28.el7.x86_64                           109/175 
+  Verifying  : elfutils-libelf-0.168-8.el7.x86_64                       110/175 
+  Verifying  : yum-plugin-fastestmirror-1.1.31-42.el7.noarch            111/175 
+  Verifying  : gnupg2-2.0.22-4.el7.x86_64                               112/175 
+  Verifying  : rpm-libs-4.11.3-25.el7.x86_64                            113/175 
+  Verifying  : 1:net-snmp-utils-5.7.2-28.el7.x86_64                     114/175 
+  Verifying  : util-linux-2.23.2-43.el7_4.2.x86_64                      115/175 
+  Verifying  : openssh-7.4p1-13.el7_4.x86_64                            116/175 
+  Verifying  : libpwquality-1.2.3-4.el7.x86_64                          117/175 
+  Verifying  : systemd-sysv-219-42.el7_4.4.x86_64                       118/175 
+  Verifying  : e2fsprogs-libs-1.42.9-10.el7.x86_64                      119/175 
+  Verifying  : rpm-python-4.11.3-25.el7.x86_64                          120/175 
+  Verifying  : 7:device-mapper-libs-1.02.140-8.el7.x86_64               121/175 
+  Verifying  : 1:net-snmp-agent-libs-5.7.2-28.el7.x86_64                122/175 
+  Verifying  : nss-softokn-freebl-3.28.3-8.el7_4.x86_64                 123/175 
+  Verifying  : gzip-1.5-9.el7.x86_64                                    124/175 
+  Verifying  : nspr-4.13.1-1.0.el7_3.x86_64                             125/175 
+  Verifying  : 2:vim-minimal-7.4.160-2.el7.x86_64                       126/175 
+  Verifying  : 1:quota-4.01-14.el7.x86_64                               127/175 
+  Verifying  : libsepol-2.5-6.el7.x86_64                                128/175 
+  Verifying  : libmount-2.23.2-43.el7_4.2.x86_64                        129/175 
+  Verifying  : python-libs-2.7.5-58.el7.x86_64                          130/175 
+  Verifying  : coreutils-8.22-18.el7.x86_64                             131/175 
+  Verifying  : binutils-2.25.1-32.base.el7_4.1.x86_64                   132/175 
+  Verifying  : audit-libs-2.7.6-3.el7.x86_64                            133/175 
+  Verifying  : 1:openssl-libs-1.0.2k-8.el7.x86_64                       134/175 
+  Verifying  : rpm-build-libs-4.11.3-25.el7.x86_64                      135/175 
+  Verifying  : pam-1.1.8-18.el7.x86_64                                  136/175 
+  Verifying  : acl-2.2.51-12.el7.x86_64                                 137/175 
+  Verifying  : initscripts-9.49.39-1.el7.x86_64                         138/175 
+  Verifying  : systemd-libs-219-42.el7_4.4.x86_64                       139/175 
+  Verifying  : systemd-219-42.el7_4.4.x86_64                            140/175 
+  Verifying  : openldap-2.4.44-5.el7.x86_64                             141/175 
+  Verifying  : procps-ng-3.3.10-16.el7.x86_64                           142/175 
+  Verifying  : 1:net-snmp-libs-5.7.2-28.el7.x86_64                      143/175 
+  Verifying  : libstdc++-4.8.5-16.el7_4.1.x86_64                        144/175 
+  Verifying  : kpartx-0.4.9-111.el7.x86_64                              145/175 
+  Verifying  : python-2.7.5-58.el7.x86_64                               146/175 
+  Verifying  : 2:tar-1.26-32.el7.x86_64                                 147/175 
+  Verifying  : glib2-2.50.3-3.el7.x86_64                                148/175 
+  Verifying  : nss-tools-3.28.4-15.el7_4.x86_64                         149/175 
+  Verifying  : iptables-1.4.21-18.2.el7_4.x86_64                        150/175 
+  Verifying  : libselinux-2.5-11.el7.x86_64                             151/175 
+  Verifying  : nss-sysinit-3.28.4-15.el7_4.x86_64                       152/175 
+  Verifying  : elfutils-default-yama-scope-0.168-8.el7.noarch           153/175 
+  Verifying  : shared-mime-info-1.8-3.el7.x86_64                        154/175 
+  Verifying  : dracut-033-502.el7.x86_64                                155/175 
+  Verifying  : 1:dbus-libs-1.6.12-17.el7.x86_64                         156/175 
+  Verifying  : iproute-3.10.0-87.el7.x86_64                             157/175 
+  Verifying  : setup-2.8.71-7.el7.noarch                                158/175 
+  Verifying  : nss-softokn-3.28.3-8.el7_4.x86_64                        159/175 
+  Verifying  : libattr-2.4.46-12.el7.x86_64                             160/175 
+  Verifying  : kmod-20-15.el7_4.6.x86_64                                161/175 
+  Verifying  : kmod-libs-20-15.el7_4.6.x86_64                           162/175 
+  Verifying  : libdb-utils-5.3.21-20.el7.x86_64                         163/175 
+  Verifying  : libblkid-2.23.2-43.el7_4.2.x86_64                        164/175 
+  Verifying  : libsemanage-2.5-8.el7.x86_64                             165/175 
+  Verifying  : bash-4.2.46-29.el7_4.x86_64                              166/175 
+  Verifying  : rpcbind-0.2.0-42.el7.x86_64                              167/175 
+  Verifying  : cpio-2.11-25.el7_4.x86_64                                168/175 
+  Verifying  : perl-Getopt-Long-2.40-2.el7.noarch                       169/175 
+  Verifying  : yum-3.4.3-154.el7.centos.noarch                          170/175 
+  Verifying  : nss-3.28.4-15.el7_4.x86_64                               171/175 
+  Verifying  : glibc-common-2.17-196.el7_4.2.x86_64                     172/175 
+  Verifying  : info-5.1-4.el7.x86_64                                    173/175 
+  Verifying  : filesystem-3.2-21.el7.x86_64                             174/175 
+  Verifying  : libuuid-2.23.2-43.el7_4.2.x86_64                         175/175 
+
+Dependency Installed:
+  lz4.x86_64 0:1.7.5-2.el7                                                      
+
+Updated:
+  acl.x86_64 0:2.2.51-14.el7                                                    
+  audit-libs.x86_64 0:2.8.1-3.el7                                               
+  bash.x86_64 0:4.2.46-30.el7                                                   
+  binutils.x86_64 0:2.27-28.base.el7_5.1                                        
+  ca-certificates.noarch 0:2018.2.22-70.0.el7_5                                 
+  centos-release.x86_64 0:7-5.1804.1.el7.centos                                 
+  coreutils.x86_64 0:8.22-21.el7                                                
+  cpio.x86_64 0:2.11-27.el7                                                     
+  cryptsetup-libs.x86_64 0:1.7.4-4.el7                                          
+  cyrus-sasl-lib.x86_64 0:2.1.26-23.el7                                         
+  dbus.x86_64 1:1.10.24-7.el7                                                   
+  dbus-libs.x86_64 1:1.10.24-7.el7                                              
+  device-mapper.x86_64 7:1.02.146-4.el7                                         
+  device-mapper-libs.x86_64 7:1.02.146-4.el7                                    
+  dracut.x86_64 0:033-535.el7                                                   
+  e2fsprogs-libs.x86_64 0:1.42.9-12.el7_5                                       
+  elfutils-default-yama-scope.noarch 0:0.170-4.el7                              
+  elfutils-libelf.x86_64 0:0.170-4.el7                                          
+  elfutils-libs.x86_64 0:0.170-4.el7                                            
+  filesystem.x86_64 0:3.2-25.el7                                                
+  glib2.x86_64 0:2.54.2-2.el7                                                   
+  glibc.x86_64 0:2.17-222.el7                                                   
+  glibc-common.x86_64 0:2.17-222.el7                                            
+  gnupg2.x86_64 0:2.0.22-5.el7_5                                                
+  gzip.x86_64 0:1.5-10.el7                                                      
+  info.x86_64 0:5.1-5.el7                                                       
+  initscripts.x86_64 0:9.49.41-1.el7                                            
+  iproute.x86_64 0:4.11.0-14.el7                                                
+  iptables.x86_64 0:1.4.21-24.1.el7_5                                           
+  kmod.x86_64 0:20-21.el7                                                       
+  kmod-libs.x86_64 0:20-21.el7                                                  
+  kpartx.x86_64 0:0.4.9-119.el7                                                 
+  krb5-libs.x86_64 0:1.15.1-19.el7                                              
+  libacl.x86_64 0:2.2.51-14.el7                                                 
+  libattr.x86_64 0:2.4.46-13.el7                                                
+  libblkid.x86_64 0:2.23.2-52.el7                                               
+  libcom_err.x86_64 0:1.42.9-12.el7_5                                           
+  libdb.x86_64 0:5.3.21-24.el7                                                  
+  libdb-utils.x86_64 0:5.3.21-24.el7                                            
+  libgcc.x86_64 0:4.8.5-28.el7_5.1                                              
+  libmount.x86_64 0:2.23.2-52.el7                                               
+  libpwquality.x86_64 0:1.2.3-5.el7                                             
+  libselinux.x86_64 0:2.5-12.el7                                                
+  libsemanage.x86_64 0:2.5-11.el7                                               
+  libsepol.x86_64 0:2.5-8.1.el7                                                 
+  libstdc++.x86_64 0:4.8.5-28.el7_5.1                                           
+  libuser.x86_64 0:0.60-9.el7                                                   
+  libuuid.x86_64 0:2.23.2-52.el7                                                
+  net-snmp.x86_64 1:5.7.2-33.el7_5.2                                            
+  net-snmp-agent-libs.x86_64 1:5.7.2-33.el7_5.2                                 
+  net-snmp-libs.x86_64 1:5.7.2-33.el7_5.2                                       
+  net-snmp-utils.x86_64 1:5.7.2-33.el7_5.2                                      
+  nspr.x86_64 0:4.19.0-1.el7_5                                                  
+  nss.x86_64 0:3.36.0-5.el7_5                                                   
+  nss-softokn.x86_64 0:3.36.0-5.el7_5                                           
+  nss-softokn-freebl.x86_64 0:3.36.0-5.el7_5                                    
+  nss-sysinit.x86_64 0:3.36.0-5.el7_5                                           
+  nss-tools.x86_64 0:3.36.0-5.el7_5                                             
+  nss-util.x86_64 0:3.36.0-1.el7_5                                              
+  openldap.x86_64 0:2.4.44-15.el7_5                                             
+  openssh.x86_64 0:7.4p1-16.el7                                                 
+  openssh-clients.x86_64 0:7.4p1-16.el7                                         
+  openssh-server.x86_64 0:7.4p1-16.el7                                          
+  openssl-libs.x86_64 1:1.0.2k-12.el7                                           
+  pam.x86_64 0:1.1.8-22.el7                                                     
+  perl-Getopt-Long.noarch 0:2.40-3.el7                                          
+  procps-ng.x86_64 0:3.3.10-17.el7_5.2                                          
+  python.x86_64 0:2.7.5-69.el7_5                                                
+  python-libs.x86_64 0:2.7.5-69.el7_5                                           
+  quota.x86_64 1:4.01-17.el7                                                    
+  quota-nls.noarch 1:4.01-17.el7                                                
+  rpcbind.x86_64 0:0.2.0-44.el7                                                 
+  rpm.x86_64 0:4.11.3-32.el7                                                    
+  rpm-build-libs.x86_64 0:4.11.3-32.el7                                         
+  rpm-libs.x86_64 0:4.11.3-32.el7                                               
+  rpm-python.x86_64 0:4.11.3-32.el7                                             
+  setup.noarch 0:2.8.71-9.el7                                                   
+  shared-mime-info.x86_64 0:1.8-4.el7                                           
+  systemd.x86_64 0:219-57.el7                                                   
+  systemd-libs.x86_64 0:219-57.el7                                              
+  systemd-sysv.x86_64 0:219-57.el7                                              
+  tar.x86_64 2:1.26-34.el7                                                      
+  tzdata.noarch 0:2018e-3.el7                                                   
+  util-linux.x86_64 0:2.23.2-52.el7                                             
+  vim-minimal.x86_64 2:7.4.160-4.el7                                            
+  yum.noarch 0:3.4.3-158.el7.centos                                             
+  yum-plugin-fastestmirror.noarch 0:1.1.31-46.el7_5                             
+
+Complete!
+--2018-08-09 17:00:25--  http://httpupdate.cpanel.net/latest
+Resolving httpupdate.cpanel.net (httpupdate.cpanel.net)... 83.170.94.2, 208.109.109.239, 76.76.26.254, ...
+Connecting to httpupdate.cpanel.net (httpupdate.cpanel.net)|83.170.94.2|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://securedownloads.cpanel.net/latest [following]
+--2018-08-09 17:00:26--  https://securedownloads.cpanel.net/latest
+Resolving securedownloads.cpanel.net (securedownloads.cpanel.net)... 208.74.121.38, 208.74.123.12
+Connecting to securedownloads.cpanel.net (securedownloads.cpanel.net)|208.74.121.38|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 29512 (29K)
+Saving to: 'latest'
+
+     0K .......... .......... ........                        100%  165K=0.2s
+
+2018-08-09 17:00:27 (165 KB/s) - 'latest' saved [29512/29512]
+
+Verifying archive integrity... All good.
+Uncompressing cPanel & WHM Installer......
+  [0;36;40m      ____                  _
+    ___|  _ \ __ _ _ __   ___| |
+   / __| |_) / _` | '_ \ / _ \ |
+  | (__|  __/ (_| | | | |  __/ |
+   \___|_|   \__,_|_| |_|\___|_|
+  [0m
+  Installer Version v00075 rec6efa17c911081813187c22246fb4d710cdaa13
+
+Beginning main installation.
+2018-08-09 17:00:27  785 ( INFO): cPanel & WHM installation started at: Thu Aug  9 17:00:27 2018!
+2018-08-09 17:00:27  786 ( INFO): This installation will require 20-50 minutes, depending on your hardware.
+2018-08-09 17:00:27  787 ( INFO): Now is the time to go get another cup of coffee/jolt.
+2018-08-09 17:00:27  788 ( INFO): The install will log to the /var/log/cpanel-install.log file.
+2018-08-09 17:00:27  789 ( INFO): 
+2018-08-09 17:00:27  790 ( INFO): Beginning Installation v3...
+2018-08-09 17:00:27  464 ( INFO): CentOS 7 (Linux) detected!
+2018-08-09 17:00:27  480 ( INFO): Checking RAM now...
+2018-08-09 17:00:27  491 (ERROR): [1;31mcPanel, Inc. requires a minimum of 1024 MB of RAM for your operating system.[0;m
+2018-08-09 17:00:27  492 (FATAL): [1;31mIncrease the server's total amount of RAM, and then reinstall cPanel & WHM.[0;m
+Removing /root/installer.lock.
+--2018-08-09 17:00:27--  http://www.softaculous.com/ins/addon_softaculous.php
+Resolving www.softaculous.com (www.softaculous.com)... 192.198.80.3
+Connecting to www.softaculous.com (www.softaculous.com)|192.198.80.3|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 641 [text/html]
+Saving to: 'addon_softaculous.php'
+
+     0K                                                       100%  102M=0s
+
+2018-08-09 17:00:27 (102 MB/s) - 'addon_softaculous.php' saved [641/641]
+
