@@ -192,7 +192,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 				name=elf_m(5);	
 			else
 				name=elf_f(5);	
-      src+="elf";
+      src+="light";
 		}		
 		if(race_x==RACE_3_m)
 			{
@@ -1504,7 +1504,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		$("#result").text("");
 		tbl+="<div id='tavern'>"+
         "<div class='table'>"+
-          "<div class='line'><div style='padding: .3em;'>Параметры заведения:</div></div>"+  
+          "<div class='line'><div style='padding: .3em; font-weight: bold; font-size: 110%;'>Параметры заведения</div></div>"+  
           "<div class='line'>"+
             "<div class='bt_place'><input type='checkbox' id='cb_tavern_name'><label for='cb_tavern_name'>"+IMF_SQ1+"</label></div>"+
             "<div class='bt_place'><button id='rnd_tavern_name'>"+IMF_RF+"</button></div>"+
@@ -1542,7 +1542,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
         "</div>"+				
         
         "<div class='table'>"+	
-          "<div class='line'><div style='padding: .3em;'>Хозяин:</div></div>"+  
+          "<div class='line'><div style='padding: .3em; font-weight: bold; font-size: 110%;'>Хозяин</div></div>"+  
           "<div class='line'>"+
             "<div class='header'><small>Хозяин: </small></div>"+
             "<div class='bt_place'><input type='checkbox' id='cb_host'><label for='cb_host'>"+IMF_SQ1+"</label></div>"+
@@ -1582,7 +1582,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
         "</div>"+
           
         "<div class='table'>"+		
-          "<div class='line'><div style='padding: .3em;'>Сейчас в таверне:</div></div>"+        
+          "<div class='line'><div style='padding: .3em; font-weight: bold; font-size: 110%;'>Сейчас в таверне</div></div>"+        
           "<div class='line'>"+
             "<div class='header'><small>Общая атмосфера: </small></div>"+
             "<div class='bt_place'><input type='checkbox' id='cb_atmosphere'><label for='cb_atmosphere'>"+IMF_SQ1+"</label></div>"+
@@ -1623,7 +1623,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
           "</div>"+
           
         "<div class='table'>"+	
-		  "<div class='line'><div style='padding: .3em;'>После гулянки:</div></div>"+        		
+		  "<div class='line'><div style='padding: .3em; font-weight: bold; font-size: 110%;'>После гулянки</div></div>"+        		
           "<div class='line'>"+
 			"<div class='header'>Результат: </div>"+
             "<div class='bt_place'><input type='checkbox' id='cb_whoopy'><label for='cb_whoopy'>"+IMF_SQ1+"</label></div>"+
