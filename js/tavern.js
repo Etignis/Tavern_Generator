@@ -1603,13 +1603,13 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
           "</div>"+
           "<div class='line'><div style='padding: .3em;'>В таверне идет представление</div></div>"+
           "<div class='line'>"+
-            "<div class='header'><small>Как исполняют: </small></div>"+
+            "<div class='header'><small>Инструмент: </small></div>"+
             "<div class='bt_place'><input type='checkbox' id='cb_mus_instr'><label for='cb_mus_instr'>"+IMF_SQ1+"</label></div>"+
             "<div class='bt_place'><button id='rnd_mus_instr'>"+IMF_RF+"</button></div>"+
             "<div class='value mus_instr'></div>"+
           "</div>"+
           "<div class='line'>"+
-            "<div class='header'><small>Что: </small></div>"+
+            "<div class='header'><small>Тема: </small></div>"+
             "<div class='bt_place'><input type='checkbox' id='cb_mus_about'><label for='cb_mus_about'>"+IMF_SQ1+"</label></div>"+
             "<div class='bt_place'><button id='rnd_mus_about'>"+IMF_RF+"</button></div>"+
             "<div class='value mus_about'></div>"+
