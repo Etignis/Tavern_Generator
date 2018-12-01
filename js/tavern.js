@@ -1603,7 +1603,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
             "<div class='bt_place'><button id='rnd_tavern_event'>"+IMF_RF+"</button></div>"+
             "<div class='value event'></div>"+
           "</div>"+
-          "<div class='line'><div style='padding: .3em;'>В таверне идет представление</div></div>"+
+          "<div class='line'><div style='padding: .3em;'>В таверне идет выступление</div></div>"+
           "<div class='line'>"+
             "<div class='header'><small>Инструмент: </small></div>"+
             "<div class='bt_place'><input type='checkbox' id='cb_mus_instr'><label for='cb_mus_instr'>"+IMF_SQ1+"</label></div>"+
