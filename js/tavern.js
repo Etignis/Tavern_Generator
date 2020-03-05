@@ -314,8 +314,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		return name;
 	}
 	// человек мужчина
-	function human_m(n)
-	{
+	function human_m(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя; nl2 - фамилия
@@ -333,8 +332,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	//человек женщина
-	function human_f(n)
-	{
+	function human_f(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		
@@ -352,8 +350,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	// тифлинг мужчина
-	function tifling_m(n)
-	{
+	function tifling_m(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		//console.log("n: "+n);
@@ -370,8 +367,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		return name;
 	}
 	// тифлинг женщина
-	function tifling_f(n)
-	{
+	function tifling_f(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя; nl2 - фамилия
@@ -389,8 +385,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	// дворф мужчина
-	function dwarf_m(n)
-	{
+	function dwarf_m(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя; nl2 - фамилия
@@ -408,8 +403,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	// дворф женщина
-	function dwarf_f(n)
-	{
+	function dwarf_f(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя; nl2 - фамилия
@@ -427,8 +421,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	// эльф мужчина
-	function elf_m(n)
-	{
+	function elf_m(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя; nl2 - фамилия
@@ -446,8 +439,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	// эльф женщина
-	function elf_f(n)
-	{
+	function elf_f(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя; nl2 - фамилия
@@ -465,8 +457,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	// драконорожденый мужчина
-	function dragonborn_m(n)
-	{
+	function dragonborn_m(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя; nl2 - фамилия
@@ -484,8 +475,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	// драконорожденная женщина
-	function dragonborn_f(n)
-	{
+	function dragonborn_f(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя; nl2 - фамилия
@@ -503,8 +493,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	// халфлинг мужчина
-	function halfling_m(n)
-	{
+	function halfling_m(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя; nl2 - фамилия
@@ -522,8 +511,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	//халфлинг женщина
-	function halfling_f(n)
-	{
+	function halfling_f(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя; nl2 - фамилия
@@ -541,8 +529,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	// орк мужчина
-	function orc_m(n)
-	{
+	function orc_m(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя
@@ -561,8 +548,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	//орк женщина
-	function orc_f(n)
-	{
+	function orc_f(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя
@@ -581,8 +567,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	// гном мужчина
-	function gnome_m(n)
-	{
+	function gnome_m(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя; nl2 - фамилия; nl3 - прозвище
@@ -603,8 +588,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	//гном женщина
-	function gnome_f(n)
-	{
+	function gnome_f(n){
 		if(n === undefined || n>5 || n<1)
 			n=1;
 		// nl1 - имя; nl2 - фамилия; nl3 - прозвище
@@ -825,6 +809,147 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		return a[0]+"; "+a[1];
 	}
 	
+	
+	//меню 
+	function get_squalid_meal(){
+		var nl1="Суп из желудей;Рис с горохом;Жареные лягушки на палочке;Луковый суп;Жаренные крысы на палочке";
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		return n1[0].trim()+ " (3мм)";
+	}
+	function get_Poor_meal(){
+		var nl1="Овсянка;Грибное рагу с кукурузным хлебом;Баранина с гусиными яйцами;Жаркое;Кролик, запеченный с тыквой;Тушенное мясо;Горячий свекольный суп и свежеиспеченный хлеб;Стейк из волчатины;Салат из чертополоха с жаенными личинками;Жаренные ножки суслика;Картофель, запеченный со специями";
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		return n1[0].trim()+ " (6мм)";
+	}
+	function get_Modest_meal(){
+		var nl1="Отбивные из дикого кабана;Жаренный лосось с картофелем;Жаренная курица с картофелем;Сырный пирог и луковый суп;Запеченный с зеленью кабан;Тушенный кролик;Лемминг и ягодный суп";
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		return n1[0].trim()+ " (3см)";
+	}
+	function get_Comfortable_meal(){
+		var nl1="Свинные ребрышки, тушенные в меду;Оленина и тушенная фасоль;Каре ягненка;Эльфийский хлеб;Запеченная свинная корейка с соусом;Стейк из говядины и пирог с почками";
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		return n1[0].trim()+ " (8см)";
+	}
+	function get_Aristocratic_meal(){
+		var nl1="Фазан, запеченный с луком-пореем;Копченный лосось и дикие ягоды;Термиты в шоколаде и заренный пеликан;Курица, жаренная с тимьяном; Тушенная говядина и грушка с имбирем";
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		return n1[0].trim()+ " (2зм)";
+	}
+	function get_Wealthy_meal(){
+		var nl1="Жаренный оолень в пикантном соусе;Варенные перепелинные яйца со специями;Пряный обезьяный хвост с кешью;Жаренная цапля и рубленная росянка;Лобстер в томатно-сливочном соусе;Фаршированный крабами хвост лобстера;Жараенный фазан в устричном соусе;Жаренный страус с омлетом";
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		return n1[0].trim()+ " (4зм)";
+	}
+	function meal_type(){
+		var nl1="Пюрешка с котлеткой;Кура с гречей;Суши из флампа";
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		
+		var tavern_level=$("#tavern_level").val();
+		let nModRand = 0;
+		switch(tavern_level) {
+			case "Дешевый": nModRand=1; break;
+			case "Обычный": nModRand=2; break;
+			case "Роскошный": nModRand=3; break;
+		}
+		
+		let aMenu = [];
+		aMenu.push(n1[0].trim());
+		if(randd(0,5)+nModRand<3) aMenu.push(get_squalid_meal());
+		if(randd(0,5)+nModRand<4) aMenu.push(get_Poor_meal());
+		if(randd(0,5)+nModRand>2) aMenu.push(get_Modest_meal());
+		if(randd(0,5)+nModRand>3) aMenu.push(get_Comfortable_meal());
+		if(randd(0,5)+nModRand>4) aMenu.push(get_Wealthy_meal());
+		if(randd(0,5)+nModRand>5) aMenu.push(get_Aristocratic_meal());
+		return "<ul>"+aMenu.map(el=>"<li>"+el+"</li>").join("")+"</ul>";
+	}
+	function get_squalid_drink(){
+		var nl1="Грог;Сильно разбавленный алкоголь;Вино из репы;Грибной самогон";
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		return n1[0].trim()+ " (~1мм)";
+	}
+	function get_Wine_drink(){
+		var nl1='Вино "Звезда пустыни";Бледное вино;Рисовое вино;Сливовое вино;Красное вино;Белое вино';
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		return n1[0].trim()+ " (2см)";
+	}
+	function get_Ale_drink(){
+		var nl1="Дворфийский эль;Ореховый эль полуросликов;Пряный эль;Королевский эль;Карамельный эль";
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		return n1[0].trim()+ " (4см)";
+	}
+	function get_Fine_Wine_drink(){
+		var nl1='Фейское вино; Вино "Дикая орхидея";Вино из лотоса;Дворфийское гранатовое вино;Кактусовое вино;Эльфийский мед;Лунный ром;Ягодный бренди;Персиковое вино;Мандариновый бренди;Мандрагоровая настойка;Лимонный мед;"Медовая роса"';
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		return n1[0].trim()+ " (10зм)";
+	}
+	function drink0_type(){
+		var nl1="Смузи из слизи;Ивовый чай;Морковный сидр;Абрикосовый сидр;Сливовый сидр; Ягодный сидр; Клюквенный сидр;Пряный яблочный сидр";
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		var tavern_level=$("#tavern_level").val();
+		let nModRand = 0;
+		switch(tavern_level) {
+			case "Дешевый": nModRand=1; break;
+			case "Обычный": nModRand=2; break;
+			case "Роскошный": nModRand=3; break;
+		}
+		
+		let aMenu = [];
+		aMenu.push(n1[0].trim());
+		if(randd(0,5)+nModRand<3) aMenu.push(get_squalid_drink());
+		if(randd(0,5)+nModRand<4) aMenu.push(get_Wine_drink());
+		if(randd(0,5)+nModRand>2) aMenu.push(get_Ale_drink());
+		if(randd(0,5)+nModRand>3) aMenu.push(get_Fine_Wine_drink());
+		return "<ul>"+aMenu.map(el=>"<li>"+el+"</li>").join("")+"</ul>";
+	}
 	// блюда в болотах
 	function dish_swamp_m(){
 		var nl1="Жареная водяная змея в соусе из бархатцев; Лягушачьи лапки с камшом; Жареная цапля с порубленной росянкой; Ломтики бабочек в лилиях; Клёцки из болотных жуков; Воробьиное рагу и суп из рогоза; Аллигатор, тушёный в чёрной смородине; Подрумяненные стрекозы с клюквой; Рагу из певчих птиц и черничный хлеб; Жареный крокодил с пюре из шиповника";
@@ -1135,15 +1260,21 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	
 	// получить блюдо
 	function dish_type1(type){
+		var deash="";
+		deash=deash_type(type);
+		return deash;
+	}
+	function meal_type1(type){
 		var meal="";
 		meal=meal_type(type);
+		drink=drink0_type(type);
 		
-		return meal;
+		return meal+"<hr>"+drink;
 	}
 	
 	// получить напиток
 	function dish_type2(type){
-		var meal="";
+		var deash="";
 		drink=drink_type(type);
 		
 		return drink;
@@ -1235,7 +1366,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	}
 	
 	// блюдо в зависимости от территории
-	function meal_type(type){
+	function deash_type(type){
 		if(type===undefined||type==0)
 		{
 			//console.log("type NaN or 0")
@@ -1301,22 +1432,22 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		if(dish1=="Совершите бросок по таблице любой другой местности")
 		{
 			//console.log(",hjcjr по другой таблице ед");
-			dish1=meal_type(0);
+			dish1=deash_type(0);
 		}
 		if(dish1=="Совершите бросок по таблице соседней местности")
 		{
 			//console.log(",hjcjr по другой таблице ед");
-			dish1=meal_type(0);
+			dish1=deash_type(0);
 		}
 		if(dish1=="Совершите бросок по таблице гор")
 		{
 			//console.log(",hjcjr по другой таблице ед");
-			dish1=meal_type(MOUNTAINS);
+			dish1=deash_type(MOUNTAINS);
 		}
 		if(dish1=="Совершите бросок по таблице Подземья")
 		{
 			//console.log(",hjcjr по другой таблице ед");
-			dish1=meal_type(UNDERDARK);
+			dish1=deash_type(UNDERDARK);
 		}
 	rnd="<button id='rnd_dish1'>"+IMF_RF+"</button>";
 	return dish1;
@@ -1530,10 +1661,16 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
             "<div class='value price'></div><div></div><div></div>"+
           "</div>"+
           "<div class='line'>"+
+            "<div class='header'><small>Меню: </small></div>"+
+            "<div class='bt_place'><input type='checkbox' id='cb_meal1'><label for='cb_meal1'>"+IMF_SQ1+"</label></div>"+
+            "<div class='bt_place'><button id='rnd_meal1'>"+IMF_RF+"</button></div>"+
+            "<div class='value meal'></div>"+
+          "</div>"+
+          "<div class='line'>"+
             "<div class='header'><small>Особое блюдо: </small></div>"+
             "<div class='bt_place'><input type='checkbox' id='cb_dish1'><label for='cb_dish1'>"+IMF_SQ1+"</label></div>"+
             "<div class='bt_place'><button id='rnd_dish1'>"+IMF_RF+"</button></div>"+
-            "<div class='value meal'></div>"+
+            "<div class='value deash'></div>"+
           "</div>"+
           "<div class='line'>"+
             "<div class='header'><small>Особый напиток: </small></div>"+
@@ -1655,7 +1792,8 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		$(".terrain_type").append(terrain_type());
 		var terrain=$("#terrain_type").val();
 		//console.log("terrain: "+terrain);
-		$(".meal").append(dish_type1(terrain));
+		$(".meal").append(meal_type1(terrain));
+		$(".deash").append(dish_type1(terrain));
 		$(".drink").append(dish_type2(terrain));
 		$(".theme").append(tavern_theme());
 		$(".event").append(tavern_event());
@@ -1686,9 +1824,13 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		//alert(1);
 		$(".tavern_name").html(tavern_name());
 	});
+	$("body").on("click", "#rnd_meal1", function(){
+		var terrain=$("#terrain_type").val();
+		$(".meal").html(meal_type1(terrain));
+	});
 	$("body").on("click", "#rnd_dish1", function(){
 		var terrain=$("#terrain_type").val();
-		$(".meal").html(dish_type1(terrain));
+		$(".deash").html(dish_type1(terrain));
 	});
 	$("body").on("click", "#rnd_dish2", function(){
 		var terrain=$("#terrain_type").val();
