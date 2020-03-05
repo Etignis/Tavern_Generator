@@ -812,7 +812,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 	
 	//меню 
 	function get_squalid_meal(){
-		var nl1="Суп из желудей;Рис с горохом;Жареные лягушки на палочке;Луковый суп;Жаренные крысы на палочке";
+		var nl1="Суп из желудей;Рис с горохом;Жареные лягушки на палочке;Луковый суп;Жаренные крысы на палочке;Бекон чешуйчатый подозрительный;Суп из сухпая;Холодец из крысиных хвостов;Рагу по-гоблински";
 		
 		var n1 = nl1.split(";");
 		
@@ -866,7 +866,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		return n1[0].trim()+ " (4зм)";
 	}
 	function meal_type(){
-		var nl1="Пюрешка с котлеткой;Кура с гречей;Суши из флампа";
+		var nl1="Пюрешка с котлеткой;Кура с гречей;Суши из флампа;Тэмпура из тентаклей;Гамбо с гоблинами;Кольца иллитидов(подаются в комплекте + разделочный топор);Дольки бихолдера;Минская колбаса;Соус из желатинового куба;Макарошки";
 		
 		var n1 = nl1.split(";");
 		
@@ -884,7 +884,9 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		let aMenu = [];
 		aMenu.push(n1[0].trim());
 		if(randd(0,5)+nModRand<3) aMenu.push(get_squalid_meal());
+		if(randd(0,5)+nModRand<3) aMenu.push(get_squalid_meal());
 		if(randd(0,5)+nModRand<4) aMenu.push(get_Poor_meal());
+		if(randd(0,5)+nModRand>2) aMenu.push(get_Modest_meal());
 		if(randd(0,5)+nModRand>2) aMenu.push(get_Modest_meal());
 		if(randd(0,5)+nModRand>3) aMenu.push(get_Comfortable_meal());
 		if(randd(0,5)+nModRand>4) aMenu.push(get_Wealthy_meal());
@@ -892,7 +894,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		return "<ul>"+aMenu.map(el=>"<li>"+el+"</li>").join("")+"</ul>";
 	}
 	function get_squalid_drink(){
-		var nl1="Грог;Сильно разбавленный алкоголь;Вино из репы;Грибной самогон";
+		var nl1="Грог;Сильно разбавленный алкоголь;Вино из репы;Грибной самогон;Кофе по-нуменорски (на морской воде);Эль из оппивок";
 		
 		var n1 = nl1.split(";");
 		
@@ -928,7 +930,7 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		return n1[0].trim()+ " (10зм)";
 	}
 	function drink0_type(){
-		var nl1="Смузи из слизи;Ивовый чай;Морковный сидр;Абрикосовый сидр;Сливовый сидр; Ягодный сидр; Клюквенный сидр;Пряный яблочный сидр";
+		var nl1='Смузи из слизи;Ивовый чай;Морковный сидр;Абрикосовый сидр;Сливовый сидр; Ягодный сидр; Клюквенный сидр;Пряный яблочный сидр;Коктейль "Семь подземных королей";Коктейль "Дыхание дракона"';
 		
 		var n1 = nl1.split(";");
 		
@@ -945,7 +947,10 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		let aMenu = [];
 		aMenu.push(n1[0].trim());
 		if(randd(0,5)+nModRand<3) aMenu.push(get_squalid_drink());
+		if(randd(0,5)+nModRand<3) aMenu.push(get_squalid_drink());
 		if(randd(0,5)+nModRand<4) aMenu.push(get_Wine_drink());
+		if(randd(0,5)+nModRand<4) aMenu.push(get_Wine_drink());
+		if(randd(0,5)+nModRand>2) aMenu.push(get_Ale_drink());
 		if(randd(0,5)+nModRand>2) aMenu.push(get_Ale_drink());
 		if(randd(0,5)+nModRand>3) aMenu.push(get_Fine_Wine_drink());
 		return "<ul>"+aMenu.map(el=>"<li>"+el+"</li>").join("")+"</ul>";
