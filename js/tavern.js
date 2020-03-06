@@ -875,6 +875,34 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		
 		return n1[0].trim()+ " (4зм)";
 	}
+	
+	function get_Dwarf_meal() {
+		var nl1="Перекус егеря(колбаса, печёный картофель, зелёный лук, дорожный эль); Кабанчик в пиве с редькой и морковью;Картофель в беконовой кожуре;Паучьи ноги во фритюре с грибами;Козье бедро с жареным хлебом и хреном;Рагу из потрохов, овощей и эля;Пепельные галеты(всё ещё горячие)";
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		return n1[0].trim();
+	}
+	function get_Gnome_meal() {
+		var nl1='Запечёный крот с горошком и огурцами;Озёрные улитки с кинзой и укропом;Кроличьи лапки с клевером;Ореховая тарелка в меду;Куропатка, фаршированная грибами;Холодная рыба с мятой и желудями;Горшочек "золотых" орешков';
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		return n1[0].trim();
+	}
+	function get_Orc_meal() {
+		var nl1='Копчёные мозги в миске из черепа;Эльфийские рёбра с пальцами и ушами;Оленина в коровьем молоке с роговой мукой;Орочий глаз в степном отваре(вы им нравитесь);Шашлык из коня;Лапы пещерного медведя;Кровь летучей мыши с трофейным элем';
+		
+		var n1 = nl1.split(";");
+		
+		n1 = shuffle(n1);
+		
+		return n1[0].trim();
+	}
 	function meal_type(){
 		var nl1="Пюрешка с котлеткой;Кура с гречей;Суши из флампа;Тэмпура из тентаклей;Гамбо с гоблинами;Кольца иллитидов(подаются в комплекте + разделочный топор);Дольки бихолдера;Минская колбаса;Соус из желатинового куба;Макарошки";
 		
@@ -893,6 +921,13 @@ var IMF_QW="<i class='fa fa-question-circle'></i>";
 		
 		let aMenu = [];
 		aMenu.push(n1[0].trim());
+		
+		var sHost=$("#host_race").val();
+		switch(sHost) {
+			case "Дворф" : if(randd(0,1)==1) aMenu.push(get_Dwarf_meal()); break;
+			case "Гном" : if(randd(0,1)==1) aMenu.push(get_Gnome_meal()); break;
+			case "Орк" : if(randd(0,1)==1) aMenu.push(get_Orc_meal()); break;
+		}
 		if(randd(0,5)+nModRand<3) aMenu.push(get_squalid_meal());
 		if(randd(0,5)+nModRand<3) aMenu.push(get_squalid_meal());
 		if(randd(0,5)+nModRand<4) aMenu.push(get_Poor_meal());
